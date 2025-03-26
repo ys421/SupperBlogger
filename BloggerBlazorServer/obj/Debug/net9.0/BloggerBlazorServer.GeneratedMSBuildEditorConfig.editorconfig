@@ -180,6 +180,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/AddArticle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZGRBcnRpY2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Admin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Article.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BcnRpY2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Articles.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BcnRpY2xlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Auth.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BdXRoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -188,12 +204,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/EditArticle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FZGl0QXJ0aWNsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9JbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Users.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Vc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/chungyunsang/Downloads/SuperBlogger/BloggerBlazorServer/Components/Pages/Weather.razor]

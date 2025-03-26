@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using BloggerBlazorServer.Components.Account.Pages;
 using BloggerBlazorServer.Components.Account.Pages.Manage;
-using BloggerBlazorServer.Data;
+using BloggerLibrary;
 
 namespace Microsoft.AspNetCore.Routing;
 

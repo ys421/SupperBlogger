@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj": {
-                "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj"
+              "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj": {
+                "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj"
               }
             }
           }
@@ -48,27 +48,23 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Aspire.Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.AspNetCore.Components.QuickGrid": {
               "target": "Package",
-              "version": "[9.1.0, )"
-            },
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.0-rc.2.24474.1, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.0-rc.2.24474.1, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
+            "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.0-rc.2.24474.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0-rc.2.24474.1, )"
             }
           },
           "imports": [
@@ -94,14 +90,14 @@
         }
       }
     },
-    "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj": {
+    "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
-        "projectName": "SuperBlogger.ServiceDefaults",
-        "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
+        "projectUniqueName": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj",
+        "projectName": "BloggerLibrary",
+        "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj",
         "packagesPath": "/Users/chungyunsang/.nuget/packages/",
-        "outputPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/obj/",
+        "outputPath": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/chungyunsang/.nuget/NuGet/NuGet.Config"
@@ -134,33 +130,13 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.Extensions.Http.Resilience": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.3.0, )"
+              "version": "[9.0.0-rc.2.24474.3, )"
             },
-            "Microsoft.Extensions.ServiceDiscovery": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.1.0, )"
-            },
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
-              "target": "Package",
-              "version": "[1.11.2, )"
-            },
-            "OpenTelemetry.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[1.11.2, )"
-            },
-            "OpenTelemetry.Instrumentation.AspNetCore": {
-              "target": "Package",
-              "version": "[1.11.1, )"
-            },
-            "OpenTelemetry.Instrumentation.Http": {
-              "target": "Package",
-              "version": "[1.11.1, )"
-            },
-            "OpenTelemetry.Instrumentation.Runtime": {
-              "target": "Package",
-              "version": "[1.11.1, )"
+              "version": "[9.0.0-rc.2.24474.1, )"
             }
           },
           "imports": [
@@ -175,9 +151,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

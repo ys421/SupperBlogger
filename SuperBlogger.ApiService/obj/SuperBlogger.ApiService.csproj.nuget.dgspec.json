@@ -4,86 +4,14 @@
     "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/SuperBlogger.ApiService.csproj": {}
   },
   "projects": {
-    "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/SuperBlogger.ApiService.csproj": {
+    "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/SuperBlogger.ApiService.csproj",
-        "projectName": "SuperBlogger.ApiService",
-        "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/SuperBlogger.ApiService.csproj",
+        "projectUniqueName": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj",
+        "projectName": "BloggerLibrary",
+        "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj",
         "packagesPath": "/Users/chungyunsang/.nuget/packages/",
-        "outputPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/chungyunsang/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net9.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
-            "projectReferences": {
-              "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj": {
-                "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
-      },
-      "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "dependencies": {
-            "Aspire.Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.1.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
-        "projectName": "SuperBlogger.ServiceDefaults",
-        "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
-        "packagesPath": "/Users/chungyunsang/.nuget/packages/",
-        "outputPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/obj/",
+        "outputPath": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/chungyunsang/.nuget/NuGet/NuGet.Config"
@@ -116,33 +44,88 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.Extensions.Http.Resilience": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.3.0, )"
+              "version": "[9.0.0-rc.2.24474.3, )"
             },
-            "Microsoft.Extensions.ServiceDiscovery": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[9.0.0-rc.2.24474.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/SuperBlogger.ApiService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/SuperBlogger.ApiService.csproj",
+        "projectName": "SuperBlogger.ApiService",
+        "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/SuperBlogger.ApiService.csproj",
+        "packagesPath": "/Users/chungyunsang/.nuget/packages/",
+        "outputPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ApiService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chungyunsang/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj": {
+                "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/BloggerLibrary/BloggerLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-rc.2.24474.1, )"
             },
-            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[1.11.2, )"
-            },
-            "OpenTelemetry.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[1.11.2, )"
-            },
-            "OpenTelemetry.Instrumentation.AspNetCore": {
-              "target": "Package",
-              "version": "[1.11.1, )"
-            },
-            "OpenTelemetry.Instrumentation.Http": {
-              "target": "Package",
-              "version": "[1.11.1, )"
-            },
-            "OpenTelemetry.Instrumentation.Runtime": {
-              "target": "Package",
-              "version": "[1.11.1, )"
+              "version": "[9.0.0-rc.2.24474.1, )"
             }
           },
           "imports": [

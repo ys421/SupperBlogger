@@ -1,0 +1,46 @@
+@page "/users"
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@inject ApplicationDbContext DbContext
+
+<h3>Registered Users</h3>
+
+@if (users == null)
+{
+    <p>Loading...</p>
+}
+else if (!users.Any())
+{
+    <p>No users found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Email Confirmed</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Email</td>
+                    <td>@user.EmailConfirmed</td>
+                    <td>@user.UserName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<ApplicationUser> users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await DbContext.Users.ToListAsync();
+    }
+}

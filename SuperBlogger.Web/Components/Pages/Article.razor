@@ -1,0 +1,28 @@
+@page "/article/{Id:int}"
+@inject IHttpClientFactory HttpClientFactory
+@using BloggerLibrary
+
+@if (article == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>@(article.Title ?? "No Title")</h3>
+    <p><strong>Author:</strong> @(article.Author ?? "Unknown")</p>
+    <p><strong>Published:</strong> @article.PublishDate.ToString("yyyy-MM-dd")</p>
+    <p>@(article.Content ?? "No Content")</p>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Article? article;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = HttpClientFactory.CreateClient("ApiService");
+        article = await client.GetFromJsonAsync<Article>($"api/articles/{Id}");
+    }
+}

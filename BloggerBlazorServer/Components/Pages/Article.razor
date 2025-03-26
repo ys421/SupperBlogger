@@ -1,0 +1,30 @@
+@page "/article/{Id:int}"
+@using BloggerLibrary
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<ApplicationDbContext> DbContextFactory
+@namespace BloggerBlazorServer.Components.Pages
+
+@if (article == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>@article.Title</h3>
+    <p><strong>Author:</strong> @article.Author</p>
+    <p><strong>Published:</strong> @article.PublishDate.ToString("yyyy-MM-dd")</p>
+    <p>@article.Content</p>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private BloggerLibrary.Article? article;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var dbContext = DbContextFactory.CreateDbContext();
+        article = await dbContext.Articles.FindAsync(Id);
+    }
+}

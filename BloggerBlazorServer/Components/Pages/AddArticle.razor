@@ -1,0 +1,71 @@
+@page "/add-article"
+@using BloggerLibrary
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<ApplicationDbContext> DbContextFactory
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@attribute [Authorize]
+
+<h3>Add Article</h3>
+
+<EditForm Model="@article" OnValidSubmit="HandleSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label>Title</label>
+        <InputText class="form-control" @bind-Value="article.Title" />
+    </div>
+
+    <div class="form-group">
+        <label>Content</label>
+        <InputTextArea class="form-control" @bind-Value="article.Content" />
+    </div>
+
+    <div class="form-group">
+        <label>Start Date</label>
+        <InputDate class="form-control" @bind-Value="article.StartDate" />
+    </div>
+
+    <div class="form-group">
+        <label>End Date</label>
+        <InputDate class="form-control" @bind-Value="article.EndDate" />
+    </div>
+
+    <div class="form-group">
+        <label>Publish</label>
+        <InputCheckbox @bind-Value="article.IsPublished" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</EditForm>
+
+@code {
+    private Article article = new Article
+    {
+        PublishDate = DateTime.Now,
+        StartDate = DateTime.Now,
+        EndDate = DateTime.Now.AddDays(30),
+        IsPublished = false
+    };
+
+    private async Task HandleSubmit()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            using var dbContext = DbContextFactory.CreateDbContext();
+            article.Author = user.Identity.Name; // 현재 로그인한 사용자의 이름
+            dbContext.Articles.Add(article);
+            await dbContext.SaveChangesAsync();
+            Navigation.NavigateTo("/articles");
+        }
+        else
+        {
+            // 인증되지 않은 경우 처리 (예: 로그인 페이지로 리디렉션)
+            Navigation.NavigateTo("/login");
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@page "/articles"
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using Microsoft.AspNetCore.Authorization
+@using BloggerLibrary
+@inject IHttpClientFactory HttpClientFactory
+
+<h3>Articles</h3>
+
+<div class="mb-3">
+    <label for="filter">Filter by Title or Author:</label>
+    <input id="filter" @bind="filterText" @bind:event="oninput" class="form-control" placeholder="Search..." />
+</div>
+
+@if (articles == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <QuickGrid Items="@FilteredArticles" Pagination="@pagination">
+        <PropertyColumn Property="@(a => a.Title)" Sortable="true" />
+        <PropertyColumn Property="@(a => a.Author)" Sortable="true" />
+        <PropertyColumn Property="@(a => a.PublishDate)" Sortable="true" Format="yyyy-MM-dd" />
+        <TemplateColumn>
+            <a href="/article/@context.Id">More...</a>
+        </TemplateColumn>
+    </QuickGrid>
+
+    <Paginator State="@pagination" />
+}
+
+@code {
+    private IQueryable<Article> FilteredArticles => 
+        (articles ?? Enumerable.Empty<Article>()).AsQueryable()
+            .Where(a => string.IsNullOrEmpty(filterText) || 
+                        (a.Title != null && a.Title.Contains(filterText, StringComparison.OrdinalIgnoreCase)) || 
+                        (a.Author != null && a.Author.Contains(filterText, StringComparison.OrdinalIgnoreCase)));
+
+    private List<Article>? articles;
+    private PaginationState pagination = new PaginationState { ItemsPerPage = 10 };
+    private string filterText = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = HttpClientFactory.CreateClient("ApiService");
+        articles = await client.GetFromJsonAsync<List<Article>>("api/articles");
+    }
+}
