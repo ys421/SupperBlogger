@@ -25,7 +25,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperBlogger.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da90864d32c9cdf8e8e3e3da58cfb4d1a719b090")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperBlogger.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperBlogger.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

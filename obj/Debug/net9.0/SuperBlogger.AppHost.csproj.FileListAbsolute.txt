@@ -124,3 +124,4 @@
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.AppHost/obj/Debug/net9.0/SuperBlogger.AppHost.pdb
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.AppHost/obj/Debug/net9.0/SuperBlogger.AppHost.genruntimeconfig.cache
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.AppHost/obj/Debug/net9.0/ref/SuperBlogger.AppHost.dll
+/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.AppHost/obj/Debug/net9.0/SuperBlogger.AppHost.sourcelink.json
