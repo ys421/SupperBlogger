@@ -120,3 +120,4 @@
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ApiService/obj/Debug/net9.0/SuperBlogger.ApiService.pdb
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ApiService/obj/Debug/net9.0/SuperBlogger.ApiService.genruntimeconfig.cache
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ApiService/obj/Debug/net9.0/ref/SuperBlogger.ApiService.dll
+/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ApiService/obj/Debug/net9.0/SuperBlogger.ApiService.sourcelink.json

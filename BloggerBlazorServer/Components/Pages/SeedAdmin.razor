@@ -1,0 +1,24 @@
+@page "/seed-admin"
+@using BloggerBlazorServer.Data
+@inject IServiceProvider Services
+
+<h3>Seed Admin and Contributor Data</h3>
+
+@if (!done)
+{
+    <p>Seeding in progress...</p>
+}
+else
+{
+    <p>Seeding completed!</p>
+}
+
+@code {
+    private bool done = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await SeedData.SeedRolesAndAdminAndContributorAsync(Services);
+        done = true;
+    }
+}

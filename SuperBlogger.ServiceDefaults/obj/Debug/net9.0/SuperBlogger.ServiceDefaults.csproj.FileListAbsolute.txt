@@ -13,3 +13,4 @@
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.AppHost/bin/Debug/net9.0/SuperBlogger.ServiceDefaults.deps.json
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.AppHost/bin/Debug/net9.0/SuperBlogger.ServiceDefaults.dll
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.AppHost/bin/Debug/net9.0/SuperBlogger.ServiceDefaults.pdb
+/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ServiceDefaults/obj/Debug/net9.0/SuperBlogger.ServiceDefaults.sourcelink.json

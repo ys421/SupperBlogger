@@ -79,3 +79,4 @@
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/SuperBlogger.Web.pdb
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/SuperBlogger.Web.genruntimeconfig.cache
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/ref/SuperBlogger.Web.dll
+/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/SuperBlogger.Web.sourcelink.json

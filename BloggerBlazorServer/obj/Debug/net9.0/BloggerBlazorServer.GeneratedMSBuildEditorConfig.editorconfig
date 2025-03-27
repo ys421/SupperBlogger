@@ -200,6 +200,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/Components/Pages/ManageUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9NYW5hZ2VVc2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/Components/Pages/MigrateDb.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9NaWdyYXRlRGIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/Components/Pages/SeedAdmin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9TZWVkQWRtaW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

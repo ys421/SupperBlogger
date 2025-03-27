@@ -1,0 +1,147 @@
+@page "/manage-users"
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@inject UserManager<ApplicationUser> UserManager
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<h3>Manage Users</h3>
+
+@if (!isAdmin)
+{
+    <p>Access Denied. You are not an admin.</p>
+}
+else if (userInfos == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Roles</th>
+                <th>Lockout</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var info in userInfos)
+        {
+            <tr>
+                <td>@info.User.Email</td>
+                <td>@string.Join(", ", info.Roles)</td>
+                <td>@(info.IsLockedOut ? "Locked" : "Unlocked")</td>
+                <td>
+                    @if (info.User.Email != "a@a.a")
+                    {
+                        <!-- Admin은 자기 자신에게 버튼 표시 X -->
+                        <button class="btn btn-sm btn-outline-primary"
+                                @onclick="@(() => PromoteToContributor(info))">
+                            Promote
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary"
+                                @onclick="@(() => DemoteFromContributor(info))">
+                            Demote
+                        </button>
+                        <button class="btn btn-sm @(info.IsLockedOut ? "btn-outline-success" : "btn-outline-danger")"
+                                @onclick="@(() => ToggleLock(info))">
+                            @(info.IsLockedOut ? "Unlock" : "Lock")
+                        </button>
+                    }
+                    else
+                    {
+                        <span class="text-muted">--</span>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private bool isAdmin = false;
+    private List<UserInfo>? userInfos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            // 관리자 이메일 a@a.a 로 고정
+            var email = user.Identity.Name;
+            isAdmin = string.Equals(email, "a@a.a", StringComparison.OrdinalIgnoreCase);
+        }
+
+        if (isAdmin)
+        {
+            await RefreshUserInfos();
+        }
+    }
+
+    private async Task PromoteToContributor(UserInfo info)
+    {
+        if (!info.Roles.Contains("Contributor"))
+        {
+            var result = await UserManager.AddToRoleAsync(info.User, "Contributor");
+        }
+        // DB 재조회
+        await RefreshUserInfos();
+    }
+
+    private async Task DemoteFromContributor(UserInfo info)
+    {
+        if (info.Roles.Contains("Contributor"))
+        {
+            var result = await UserManager.RemoveFromRoleAsync(info.User, "Contributor");
+        }
+        await RefreshUserInfos();
+    }
+
+    private async Task ToggleLock(UserInfo info)
+    {
+        if (info.IsLockedOut)
+        {
+            // 잠금 해제
+            var result = await UserManager.SetLockoutEndDateAsync(info.User, null);
+        }
+        else
+        {
+            // 잠금
+            var result = await UserManager.SetLockoutEndDateAsync(info.User, DateTimeOffset.MaxValue);
+        }
+        await RefreshUserInfos();
+    }
+
+    // 매번 DB에서 최신 정보 로드
+    private async Task RefreshUserInfos()
+    {
+        var allUsers = await UserManager.Users.ToListAsync();
+        userInfos = new List<UserInfo>();
+        foreach (var u in allUsers)
+        {
+            var roles = await UserManager.GetRolesAsync(u);
+            bool locked = await UserManager.IsLockedOutAsync(u);
+
+            userInfos.Add(new UserInfo
+            {
+                User = u,
+                Roles = roles.ToList(),
+                IsLockedOut = locked
+            });
+        }
+        StateHasChanged();
+    }
+
+    private class UserInfo
+    {
+        public ApplicationUser User { get; set; } = default!;
+        public List<string> Roles { get; set; } = new();
+        public bool IsLockedOut { get; set; }
+    }
+}

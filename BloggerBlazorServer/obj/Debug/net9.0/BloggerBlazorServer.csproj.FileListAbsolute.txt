@@ -277,3 +277,4 @@
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/obj/Debug/net9.0/compressed/vj2rw846oo-khy4lop6wu.gz
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/obj/Debug/net9.0/compressed/vqpoe5jia1-kfpufcaf46.gz
 /Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/obj/Debug/net9.0/compressed/kq3n39xgo4-kfpufcaf46.gz
+/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/BloggerBlazorServer/obj/Debug/net9.0/BloggerBlazorServer.sourcelink.json
