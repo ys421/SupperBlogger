@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4bm6L0eRqGiA7GDEShbv0/nOxF2UkrhcR/VYrEvVPj8=",
+  "Hash": "8Srj80V0GhRQpeT/5OB1v1qPCEWIjjnJbtp18YFhACo=",
   "Source": "SuperBlogger.Web",
   "BasePath": "_content/SuperBlogger.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SuperBlogger.Web/wwwroot",
       "Source": "SuperBlogger.Web",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/",
       "BasePath": "_content/SuperBlogger.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "SuperBlogger.Web#[.{fingerprint=qy9yr3h6kb}]!.bundle.scp.css.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
+      "RelatedAsset": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "w16hgx0dsg",
       "Integrity": "5Kxq3M6vjKQ3j2mZGJFgu4lmUZlUtD4/Ki6SvHkc+bE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css"
+      "OriginalItemSpec": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "SuperBlogger.Web#[.{fingerprint=qy9yr3h6kb}]?.styles.css.gz",
       "AssetKind": "All",
@@ -49,20 +49,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
+      "RelatedAsset": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "w16hgx0dsg",
       "Integrity": "5Kxq3M6vjKQ3j2mZGJFgu4lmUZlUtD4/Ki6SvHkc+bE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css"
+      "OriginalItemSpec": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
+      "RelatedAsset": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "a5iolpc9xz",
       "Integrity": "3qo3UHtt1eBcfATKJXtIrY+ZdPuBA21DhCoR49jAwbE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map"
+      "OriginalItemSpec": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "app#[.{fingerprint=lsmoadmmt2}]?.css.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
+      "RelatedAsset": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "gpxeewwc0g",
       "Integrity": "3A+9NgiKE7KmDcdCIULHFv35rhkN5i/6ycpZMeXtK6k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/app.css"
+      "OriginalItemSpec": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/app.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.gz",
       "AssetKind": "All",
@@ -112,20 +112,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
+      "RelatedAsset": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "cgoy1mia33",
       "Integrity": "tPYWjXj9L/S5BdHc4ZBRoFSS52tSuxE25ck3Juj3XTc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css"
+      "OriginalItemSpec": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "SuperBlogger.Web#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -140,13 +140,13 @@
       "Integrity": "8t0hv8rHleMF+MRM8xRBMKFaxVSQGm2wVNGJ2WuG/cg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css"
+      "OriginalItemSpec": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "SuperBlogger.Web#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -161,13 +161,13 @@
       "Integrity": "8t0hv8rHleMF+MRM8xRBMKFaxVSQGm2wVNGJ2WuG/cg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css"
+      "OriginalItemSpec": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
+      "Identity": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/",
+      "ContentRoot": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/",
       "BasePath": "_content/SuperBlogger.Web",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -251,7 +251,7 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -306,7 +306,7 @@
     },
     {
       "Route": "app.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -343,7 +343,7 @@
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -388,7 +388,7 @@
     },
     {
       "Route": "app.lsmoadmmt2.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -451,7 +451,7 @@
     },
     {
       "Route": "app.lsmoadmmt2.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -496,7 +496,7 @@
     },
     {
       "Route": "app.lsmoadmmt2.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/sarufxvjf9-lsmoadmmt2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -549,7 +549,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -612,7 +612,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -657,7 +657,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.6gzpyzhau4.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -710,7 +710,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -765,7 +765,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -802,7 +802,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -865,7 +865,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -910,7 +910,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -963,7 +963,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/yn8xs27kk9-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1008,7 +1008,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.map",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1063,7 +1063,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.map",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1100,7 +1100,7 @@
     },
     {
       "Route": "bootstrap/bootstrap.min.css.map.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/lh0c3kthds-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1145,7 +1145,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1190,7 +1190,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1227,7 +1227,7 @@
     },
     {
       "Route": "SuperBlogger.Web.bundle.scp.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1282,7 +1282,7 @@
     },
     {
       "Route": "SuperBlogger.Web.bundle.scp.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1319,7 +1319,7 @@
     },
     {
       "Route": "SuperBlogger.Web.bundle.scp.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1364,7 +1364,7 @@
     },
     {
       "Route": "SuperBlogger.Web.qy9yr3h6kb.bundle.scp.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1427,7 +1427,7 @@
     },
     {
       "Route": "SuperBlogger.Web.qy9yr3h6kb.bundle.scp.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1472,7 +1472,7 @@
     },
     {
       "Route": "SuperBlogger.Web.qy9yr3h6kb.bundle.scp.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/1o72vv5ydf-qy9yr3h6kb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1525,7 +1525,7 @@
     },
     {
       "Route": "SuperBlogger.Web.qy9yr3h6kb.styles.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1588,7 +1588,7 @@
     },
     {
       "Route": "SuperBlogger.Web.qy9yr3h6kb.styles.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1633,7 +1633,7 @@
     },
     {
       "Route": "SuperBlogger.Web.qy9yr3h6kb.styles.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1686,7 +1686,7 @@
     },
     {
       "Route": "SuperBlogger.Web.styles.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1741,7 +1741,7 @@
     },
     {
       "Route": "SuperBlogger.Web.styles.css",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/bundle/SuperBlogger.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1778,7 +1778,7 @@
     },
     {
       "Route": "SuperBlogger.Web.styles.css.gz",
-      "AssetFile": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
+      "AssetFile": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/compressed/j24cel3r6w-qy9yr3h6kb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

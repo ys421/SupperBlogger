@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
+      "Id": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/obj/Debug/net9.0/scopedcss/projectbundle/SuperBlogger.Web.bundle.scp.css",
       "PackagePath": "staticwebassets/SuperBlogger.Web.qy9yr3h6kb.bundle.scp.css"
     },
     {
-      "Id": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
+      "Id": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
+      "Id": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Id": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
+      "Id": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.Web/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
     {

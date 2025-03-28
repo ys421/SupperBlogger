@@ -2024,19 +2024,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/seungyeop/.nuget/packages/": {}
+    "/Users/chungyunsang/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
+      "projectUniqueName": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
       "projectName": "SuperBlogger.ServiceDefaults",
-      "projectPath": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
-      "packagesPath": "/Users/seungyeop/.nuget/packages/",
-      "outputPath": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ServiceDefaults/obj/",
+      "projectPath": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
+      "packagesPath": "/Users/chungyunsang/.nuget/packages/",
+      "outputPath": "/Users/chungyunsang/Documents/SuperBlogger/SuperBlogger.ServiceDefaults/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/seungyeop/.nuget/NuGet/NuGet.Config"
+        "/Users/chungyunsang/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
