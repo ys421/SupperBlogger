@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperBlogger.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5e9dbbe92b6b6899313187bd3e5ea8cc37b1a09")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e8128814246d63c5dc0220f5172b4bc0feef6e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperBlogger.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperBlogger.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

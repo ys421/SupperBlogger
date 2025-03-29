@@ -38,7 +38,6 @@ else
                 <td>
                     @if (info.User.Email != "a@a.a")
                     {
-                        <!-- Admin은 자기 자신에게 버튼 표시 X -->
                         <button class="btn btn-sm btn-outline-primary"
                                 @onclick="@(() => PromoteToContributor(info))">
                             Promote
@@ -73,9 +72,8 @@ else
         var user = authState.User;
         if (user.Identity?.IsAuthenticated == true)
         {
-            // 관리자 이메일 a@a.a 로 고정
-            var email = user.Identity.Name;
-            isAdmin = string.Equals(email, "a@a.a", StringComparison.OrdinalIgnoreCase);
+            var currentUser = await UserManager.FindByNameAsync(user.Identity.Name);
+            isAdmin = await UserManager.IsInRoleAsync(currentUser, "Admin");
         }
 
         if (isAdmin)
@@ -86,57 +84,65 @@ else
 
     private async Task PromoteToContributor(UserInfo info)
     {
+        Console.WriteLine("PromoteToContributor called for " + info.User.Email);
         if (!info.Roles.Contains("Contributor"))
         {
             var result = await UserManager.AddToRoleAsync(info.User, "Contributor");
+            if (!result.Succeeded)
+            {
+                Console.WriteLine("Promote failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+                return;
+            }
         }
-        // DB 재조회
         await RefreshUserInfos();
     }
 
     private async Task DemoteFromContributor(UserInfo info)
     {
+        Console.WriteLine("DemoteFromContributor called for " + info.User.Email);
         if (info.Roles.Contains("Contributor"))
         {
             var result = await UserManager.RemoveFromRoleAsync(info.User, "Contributor");
+            if (!result.Succeeded)
+            {
+                Console.WriteLine("Demote failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+                return;
+            }
         }
         await RefreshUserInfos();
     }
 
     private async Task ToggleLock(UserInfo info)
     {
-        if (info.IsLockedOut)
+        Console.WriteLine("ToggleLock called for " + info.User.Email);
+        var result = info.IsLockedOut
+            ? await UserManager.SetLockoutEndDateAsync(info.User, null)
+            : await UserManager.SetLockoutEndDateAsync(info.User, DateTimeOffset.MaxValue);
+        if (!result.Succeeded)
         {
-            // 잠금 해제
-            var result = await UserManager.SetLockoutEndDateAsync(info.User, null);
-        }
-        else
-        {
-            // 잠금
-            var result = await UserManager.SetLockoutEndDateAsync(info.User, DateTimeOffset.MaxValue);
+            Console.WriteLine("ToggleLock failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+            return;
         }
         await RefreshUserInfos();
     }
 
-    // 매번 DB에서 최신 정보 로드
     private async Task RefreshUserInfos()
+{
+    var allUsers = await UserManager.Users.ToListAsync();
+    userInfos = new List<UserInfo>();
+    foreach (var u in allUsers)
     {
-        var allUsers = await UserManager.Users.ToListAsync();
-        userInfos = new List<UserInfo>();
-        foreach (var u in allUsers)
+        var roles = await UserManager.GetRolesAsync(u);
+        bool locked = await UserManager.IsLockedOutAsync(u);
+        userInfos.Add(new UserInfo
         {
-            var roles = await UserManager.GetRolesAsync(u);
-            bool locked = await UserManager.IsLockedOutAsync(u);
-
-            userInfos.Add(new UserInfo
-            {
-                User = u,
-                Roles = roles.ToList(),
-                IsLockedOut = locked
-            });
-        }
-        StateHasChanged();
+            User = u,
+            Roles = roles.ToList(),
+            IsLockedOut = locked
+        });
     }
+    StateHasChanged(); // UI 갱신 강제
+}
 
     private class UserInfo
     {
