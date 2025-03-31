@@ -33,7 +33,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 Console.WriteLine($"Connection string: {connectionString}");
 
-builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>() // 여기서 Roles 활성화
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddSignInManager()
