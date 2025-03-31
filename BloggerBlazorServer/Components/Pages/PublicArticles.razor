@@ -10,11 +10,10 @@
 @inject AuthenticationStateProvider AuthStateProvider
 @inject UserManager<ApplicationUser> UserManager
 
-<h3>Articles</h3>
+<h3>Article Manage Page</h3>
 
 @if (isContributorOrAdmin)
 {
-    <!-- Create Article 버튼 (관리자/컨트리뷰터 전용) -->
     <EditForm Model="@dummyModel"
               OnValidSubmit="HandleCreateArticlePost"
               method="post"
@@ -53,19 +52,12 @@ else
                 <td>
                     <a href="/articles/@article.Id">@article.Title</a>
                 </td>
-                <!-- Creator?.UserName: 원 작성자 표시 -->
                 <td>@article.Creator?.UserName</td>
-
-                <!-- LastModifier?.UserName: 최종 수정자 표시 (없으면 null) -->
                 <td>@article.LastModifier?.UserName</td>
-
                 <td>@article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</td>
-
                 @if (isContributorOrAdmin)
                 {
                     <td>
-                        <!-- 관리자: 모든 글 편집 가능 -->
-                        <!-- 컨트리뷰터: 본인 글(CreatedBy == currentUserId)만 편집 가능 -->
                         @if (isAdmin || (isContributor && article.CreatedBy == currentUserId))
                         {
                             <a href="@($"/articles/edit/{article.Id}")" class="btn btn-sm btn-secondary">Edit</a>
@@ -79,9 +71,7 @@ else
 }
 
 @code {
-    // Create 버튼 용 더미 모델 (내용은 실제로 사용하지 않음)
     private object dummyModel = new();
-
     private List<Article>? articles;
     private bool isContributorOrAdmin = false;
     private bool isAdmin = false;
@@ -90,7 +80,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        // 1) 현재 로그인 사용자 정보 로드
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
         if (user.Identity?.IsAuthenticated == true)
@@ -105,15 +94,12 @@ else
         }
         isContributorOrAdmin = (isAdmin || isContributor);
 
-        // 2) 게시글 로딩
-        // - 관리자: 모든 글
-        // - 컨트리뷰터: 자신의 글(CreatedBy == currentUserId) + 타인의 퍼블리시된 글
-        // - 일반 사용자: 퍼블리시된 글만
+        // StartDate와 EndDate 필터링 조건 제거
         if (isAdmin)
         {
             articles = await DbContext.Articles
-                .Include(a => a.Creator)      // CreatedBy navigation
-                .Include(a => a.LastModifier) // LastModifiedBy navigation
+                .Include(a => a.Creator)
+                .Include(a => a.LastModifier)
                 .OrderByDescending(a => a.CreatedAt)
                 .ToListAsync();
         }
@@ -138,15 +124,8 @@ else
         }
     }
 
-    // Create Article 버튼 클릭 시
     private void HandleCreateArticlePost()
     {
         NavigationManager.NavigateTo("/articles/create");
-    }
-
-    // (미사용) - 여기서는 단순 anchor 태그로 Edit 이동
-    private void EditArticle(int id)
-    {
-        NavigationManager.NavigateTo($"/articles/edit/{id}");
     }
 }

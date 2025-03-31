@@ -39,26 +39,35 @@
         <ValidationMessage For="() => Input.Body" />
     </div>
 
+    <div class="mb-3">
+        <label for="Input.StartDate" class="form-label">Start Date</label>
+        <InputDate @bind-Value="Input.StartDate" id="Input.StartDate" class="form-control" />
+        <ValidationMessage For="() => Input.StartDate" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Input.EndDate" class="form-label">End Date</label>
+        <InputDate @bind-Value="Input.EndDate" id="Input.EndDate" class="form-control" />
+        <ValidationMessage For="() => Input.EndDate" />
+    </div>
+
     <div class="form-check mb-3">
         <InputCheckbox class="form-check-input" @bind-Value="Input.IsPublished" />
         <label class="form-check-label">Publish Article</label>
     </div>
 
-    <p>Created at (UTC): @Input.CreatedAt</p>
+    <p>Created at (UTC): @Input.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</p>
 
     <button type="submit" class="btn btn-primary">Create</button>
 </EditForm>
 
 @code {
-    // 폼 데이터 바인딩을 위한 모델 (CreatedBy 대신 AuthorId를 대체)
     [SupplyParameterFromForm]
     private InputModel Input { get; set; } = new();
 
-    // (선택) ReturnUrl 쿼리 파라미터
     [SupplyParameterFromQuery]
     private string? ReturnUrl { get; set; }
 
-    // InputModel 내부에서 AuthorId를 CreatedBy로 변경
     private sealed class InputModel
     {
         [Required]
@@ -69,18 +78,21 @@
         [MinLength(20, ErrorMessage = "Body must be at least 20 characters.")]
         public string Body { get; set; } = "";
 
+        [Required]
+        public DateTime StartDate { get; set; } = DateTime.UtcNow;
+
+        [Required]
+        public DateTime EndDate { get; set; } = DateTime.UtcNow.AddDays(30);
+
         public bool IsPublished { get; set; } = false;
 
-        // 작성 시각
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        // 원 작성자 – CreatedBy
         public string? CreatedBy { get; set; }
     }
 
     protected override async Task OnInitializedAsync()
     {
-        // 로그인 사용자 가져오기
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
         if (user.Identity?.IsAuthenticated == true)
@@ -93,24 +105,27 @@
         }
     }
 
-    // 폼 제출 시 실행되는 로직
-public async Task HandleValidSubmit()
-{
-    var article = new Article
+    public async Task HandleValidSubmit()
     {
-        Title       = Input.Title,
-        Body        = Input.Body,
-        IsPublished = Input.IsPublished,
-        CreatedAt   = Input.CreatedAt,
-        CreatedBy   = Input.CreatedBy,
-        LastModifiedBy = Input.CreatedBy   // 처음 생성 시 작성자와 동일하게 설정
-    };
+        // CreatedAt을 명시적으로 현재 시간으로 설정
+        Input.CreatedAt = DateTime.UtcNow;
 
-    DbContext.Articles.Add(article);
-    await DbContext.SaveChangesAsync();
+        var article = new Article
+        {
+            Title = Input.Title,
+            Body = Input.Body,
+            StartDate = Input.StartDate,
+            EndDate = Input.EndDate,
+            IsPublished = Input.IsPublished,
+            CreatedAt = Input.CreatedAt,
+            CreatedBy = Input.CreatedBy,
+            LastModifiedBy = Input.CreatedBy
+        };
 
-    Logger.LogInformation("Article created with Title: {Title}", article.Title);
-    NavigationManager.NavigateTo("/articles");
-}
+        DbContext.Articles.Add(article);
+        await DbContext.SaveChangesAsync();
 
+        Logger.LogInformation("Article created with Title: {Title}, CreatedAt: {CreatedAt}", article.Title, article.CreatedAt);
+        NavigationManager.NavigateTo("/articles");
+    }
 }

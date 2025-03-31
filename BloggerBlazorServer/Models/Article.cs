@@ -29,6 +29,10 @@ namespace BloggerBlazorServer.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        // StartDate와 EndDate 추가
+        public DateTime StartDate { get; set; } = DateTime.UtcNow; // 기본값으로 현재 시간 설정
+        public DateTime EndDate { get; set; } = DateTime.UtcNow.AddDays(30); // 기본값으로 30일 후 설정
+
         public bool IsPublished { get; set; } = false;
     }
 }

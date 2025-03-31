@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading.Tasks;
+using BloggerBlazorServer.Models;
 
 namespace BloggerBlazorServer.Data
 {
@@ -11,7 +13,7 @@ namespace BloggerBlazorServer.Data
         {
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
             var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-
+            var dbContext = services.GetRequiredService<ApplicationDbContext>();
             // 1) 기본 역할 생성: Admin, Contributor, User
             string[] roleNames = { "Admin", "Contributor", "User" };
             foreach (var role in roleNames)
@@ -88,7 +90,31 @@ namespace BloggerBlazorServer.Data
                 }
                 await userManager.UpdateAsync(contributorUser);
             }
+            
+            if (!await dbContext.Articles.AnyAsync())
+            {
+                var admin = await userManager.FindByEmailAsync(adminEmail);
+                if (admin != null)
+                {
+                    var articles = new[]
+                    {
+                        new Article
+                        {
+                            Title = "Sample Article for Testing",
+                            Body = "This is a sample article to test the blog functionality.",
+                            StartDate = new DateTime(2025, 3, 15, 0, 0, 0, DateTimeKind.Utc),
+                            EndDate = new DateTime(2025, 3, 30, 0, 0, 0, DateTimeKind.Utc),
+                            IsPublished = true,
+                            CreatedAt = new DateTime(2025, 3, 15, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedBy = admin.Id,
+                            LastModifiedBy = admin.Id
+                        }
+                    };
 
+                    dbContext.Articles.AddRange(articles);
+                    await dbContext.SaveChangesAsync();
+                }
+            }
         }
     }
 }

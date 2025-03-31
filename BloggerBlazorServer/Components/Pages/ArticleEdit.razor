@@ -23,15 +23,9 @@ else if (!canEdit)
 }
 else
 {
-    <!-- 전통적인 HTML 폼 방식으로, action은 서버의 ArticlesController.Edit 액션으로 POST 전송 -->
     <form method="post" action="/Article/Edit">
-        <!-- Article Id (숨김 필드) -->
         <input type="hidden" name="Id" value="@article.Id" />
-
-        <!-- 원 작성자 (CreatedBy) - 수정 시 변경하지 않음 -->
         <input type="hidden" name="CreatedBy" value="@article.CreatedBy" />
-
-        <!-- 최종 수정자 (LastModifiedBy) - 현재 로그인 사용자의 실제 ID를 전송 -->
         <input type="hidden" name="LastModifiedBy" value="@currentUserId" />
 
         <div class="mb-3">
@@ -46,8 +40,19 @@ else
                       required minlength="20">@article.Body</textarea>
         </div>
 
+        <div class="mb-3">
+            <label class="form-label">Start Date</label>
+            <input type="date" name="StartDate" class="form-control"
+                   value="@article.StartDate.ToString("yyyy-MM-dd")" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">End Date</label>
+            <input type="date" name="EndDate" class="form-control"
+                   value="@article.EndDate.ToString("yyyy-MM-dd")" required />
+        </div>
+
         <div class="form-check mb-3">
-            <!-- 체크박스와 숨김 필드 순서를 바꿔서, 체크박스가 체크된 경우 "true"가 먼저 전송되도록 함 -->
             <input type="checkbox" name="IsPublished" class="form-check-input" value="true" @(article.IsPublished ? "checked" : "") />
             <input type="hidden" name="IsPublished" value="false" />
             <label class="form-check-label">Publish Article</label>
@@ -70,7 +75,6 @@ else
     {
         Logger.LogInformation("ArticleEdit OnInitializedAsync 시작됨");
 
-        // 로그인 사용자 확인 및 실제 사용자 ID 가져오기
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
 
@@ -80,12 +84,11 @@ else
             appUser = await UserManager.FindByNameAsync(user.Identity.Name);
             if (appUser != null)
             {
-                currentUserId = appUser.Id; // 실제 DB에 존재하는 사용자 Id
+                currentUserId = appUser.Id;
                 Logger.LogInformation("currentUserId = {UserId}", currentUserId);
             }
         }
 
-        // DB에서 해당 Article 로드
         article = await DbContext.Articles.FirstOrDefaultAsync(a => a.Id == id);
         if (article == null)
         {
@@ -93,7 +96,6 @@ else
             return;
         }
 
-        // 권한 체크: 관리자이면 수정 가능, 컨트리뷰터이면 원 작성자(즉, CreatedBy가 현재 사용자와 일치)만 수정 가능
         bool isAdmin = false;
         bool isContributor = false;
         if (appUser != null)

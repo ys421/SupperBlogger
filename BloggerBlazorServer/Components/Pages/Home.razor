@@ -1,7 +1,122 @@
 ﻿@page "/"
 
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@using BloggerBlazorServer.Models
+@using Microsoft.AspNetCore.Components
+
+@inject ApplicationDbContext DbContext
+@inject NavigationManager NavManager
+@inject ILogger<Home> Logger
+
 <PageTitle>Home</PageTitle>
 
-<h1>Intranet Blog</h1>
+<h1>COMP4870</h1>
 
-NAS BLOG
+<h3>Alex Chung | Seungyeop Hyun | Nischey Gupta</h3>
+
+@if (articles == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var article in articles)
+    {
+        <div class="article-preview mb-3" style="border: 1px solid #000; padding: 10px; @(expandedArticleId == article.Id ? "background-color: #f0f0f0;" : "")">
+            <div style="font-size: 1.2em; font-weight: bold; word-break: break-all;">@article.Title</div>
+            <p>
+                <small style="color: #0056b3;">
+                    By @article.Creator?.UserName, @article.CreatedAt.ToLocalTime().ToString("MMMM dd, yyyy")
+                </small>
+            </p>
+            <p style="word-break: break-all;">
+                @if (expandedArticleId == article.Id)
+                {
+                    @((MarkupString)article.Body)
+                    <a href="@NavManager.GetUriWithQueryParameters("", new Dictionary<string, object?> { ["expanded"] = null })" style="color: #0056b3;">  less...</a>
+                }
+                else
+                {
+                    <p>@ShortenBody(article.Body)</p>
+                    @if (article.Body.Length > 100)
+                    {
+                        <a href="@NavManager.GetUriWithQueryParameters("", new Dictionary<string, object?> { ["expanded"] = article.Id })" style="color: #0056b3;">more...</a>
+                    }
+                }
+            </p>
+        </div>
+    }
+}
+
+@code {
+    private List<Article>? articles;
+    private int totalArticlesCount;
+    private int publishedArticlesCount;
+    private int articlesWithinDateRangeCount;
+    private int? expandedArticleId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var currentDate = DateTime.UtcNow;
+        Logger.LogInformation("Current date for filtering: {CurrentDate}", currentDate);
+
+        var allArticles = await DbContext.Articles
+            .Include(a => a.Creator)
+            .ToListAsync();
+
+        totalArticlesCount = allArticles.Count;
+        Logger.LogInformation("Total articles in database: {Count}", totalArticlesCount);
+
+        var publishedArticles = allArticles.Where(a => a.IsPublished).ToList();
+        publishedArticlesCount = publishedArticles.Count;
+        Logger.LogInformation("Published articles: {Count}", publishedArticlesCount);
+
+        foreach (var article in publishedArticles)
+        {
+            Logger.LogInformation("Published article: {Title}, StartDate: {StartDate}, EndDate: {EndDate}, CreatedAt: {CreatedAt}",
+                article.Title, article.StartDate, article.EndDate, article.CreatedAt);
+        }
+
+        var articlesWithinDateRange = publishedArticles
+            .Where(a => a.StartDate <= currentDate && a.EndDate >= currentDate)
+            .ToList();
+        articlesWithinDateRangeCount = articlesWithinDateRange.Count;
+        Logger.LogInformation("Articles within date range: {Count}", articlesWithinDateRangeCount);
+
+        articles = await DbContext.Articles
+            .Include(a => a.Creator)
+            .Where(a => a.IsPublished && a.StartDate <= currentDate && a.EndDate >= currentDate)
+            .OrderByDescending(a => a.CreatedAt)
+            .ToListAsync();
+
+        foreach (var article in articles)
+        {
+            Logger.LogInformation("Article: {Title}, StartDate: {StartDate}, EndDate: {EndDate}, CreatedAt: {CreatedAt}",
+                article.Title, article.StartDate, article.EndDate, article.CreatedAt);
+        }
+    }
+
+    protected override void OnParametersSet()
+    {
+        var uri = new Uri(NavManager.Uri);
+        var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+        if (int.TryParse(query["expanded"], out var id))
+        {
+            expandedArticleId = id;
+        }
+        else
+        {
+            expandedArticleId = null;
+        }
+    }
+
+    private string ShortenBody(string body)
+    {
+        if (string.IsNullOrEmpty(body) || body.Length <= 100)
+        {
+            return body;
+        }
+        return body.Substring(0, 100) + "...";
+    }
+}
