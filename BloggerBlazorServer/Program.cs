@@ -45,6 +45,9 @@ builder.AddServiceDefaults();
 
 var app = builder.Build();
 
+// 개발 환경에 관계없이 WebSocket 활성화
+app.UseWebSockets();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
@@ -63,6 +66,8 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
+app.MapBlazorHub();
+
 app.MapAdditionalIdentityEndpoints();
 
 using (var scope = app.Services.CreateScope())
@@ -73,3 +78,4 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+

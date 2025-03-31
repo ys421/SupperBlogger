@@ -32,24 +32,32 @@ namespace BloggerBlazorServer.Data
                 {
                     UserName = adminEmail,
                     Email = adminEmail,
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    IsActive = true // ★ 관리자 계정은 기본적으로 활성 상태
                 };
 
                 var result = await userManager.CreateAsync(adminUser, adminPassword);
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(adminUser, "Admin");
+                    // DB 반영
+                    await userManager.UpdateAsync(adminUser);
                 }
-            }
-            else
-            {
+                }
+                else
+                {
+                // 이미 존재한다면, 관리자 계정이 비활성 상태일 수도 있으므로 활성으로 강제
+                adminUser.IsActive = true; // ★ 관리자 계정은 항상 활성
                 if (!await userManager.IsInRoleAsync(adminUser, "Admin"))
                 {
                     await userManager.AddToRoleAsync(adminUser, "Admin");
                 }
+                // DB 반영
+                await userManager.UpdateAsync(adminUser);
             }
 
-            // 3) 컨트리뷰터 계정 생성 (c@c.c) – 기본 잠금 상태
+
+            // 3) 컨트리뷰터 계정 생성 (c@c.c) – 기본 비활성 상태
             var contributorEmail = "c@c.c";
             var contributorPassword = "P@$$w0rd";
             var contributorUser = await userManager.FindByEmailAsync(contributorEmail);
@@ -59,27 +67,28 @@ namespace BloggerBlazorServer.Data
                 {
                     UserName = contributorEmail,
                     Email = contributorEmail,
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    IsActive = false // 기본적으로 비활성 상태로 설정
                 };
 
                 var result = await userManager.CreateAsync(contributorUser, contributorPassword);
                 if (result.Succeeded)
                 {
-                    await userManager.SetLockoutEnabledAsync(contributorUser, true);
                     await userManager.AddToRoleAsync(contributorUser, "Contributor");
-                    await userManager.SetLockoutEndDateAsync(contributorUser, DateTimeOffset.MaxValue);
+                    await userManager.UpdateAsync(contributorUser);
                 }
             }
             else
             {
-                await userManager.SetLockoutEnabledAsync(contributorUser, true);
+                // 이미 존재하는 경우에도 비활성 상태로 강제
+                contributorUser.IsActive = false;
                 if (!await userManager.IsInRoleAsync(contributorUser, "Contributor"))
                 {
                     await userManager.AddToRoleAsync(contributorUser, "Contributor");
                 }
-                // 항상 잠금 상태로 설정
-                await userManager.SetLockoutEndDateAsync(contributorUser, DateTimeOffset.MaxValue);
-                }
+                await userManager.UpdateAsync(contributorUser);
+            }
+
         }
     }
 }

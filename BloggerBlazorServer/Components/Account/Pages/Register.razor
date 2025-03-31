@@ -85,7 +85,8 @@
         await UserManager.AddToRoleAsync(user, "User");
 
         // 새로 가입한 유저를 잠금 상태로 설정 (관리자 해제 전까지 로그인 불가)
-        await UserManager.SetLockoutEndDateAsync(user, DateTimeOffset.MaxValue);
+        user.IsActive = false;
+        await UserManager.UpdateAsync(user);
 
         // 이하 기본 이메일 확인/로그인 로직
         var userId = await UserManager.GetUserIdAsync(user);

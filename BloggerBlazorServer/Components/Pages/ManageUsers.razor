@@ -7,7 +7,7 @@
 @inject NavigationManager NavigationManager
 @inject AuthenticationStateProvider AuthenticationStateProvider
 
-<h3>Manage Users</h3>
+<h3>Manage Users (Server Form)</h3>
 
 @if (!isAdmin)
 {
@@ -24,40 +24,43 @@ else
             <tr>
                 <th>Email</th>
                 <th>Roles</th>
-                <th>Lockout</th>
+                <th>Status</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-        @foreach (var info in userInfos)
-        {
-            <tr>
-                <td>@info.User.Email</td>
-                <td>@string.Join(", ", info.Roles)</td>
-                <td>@(info.IsLockedOut ? "Locked" : "Unlocked")</td>
-                <td>
-                    @if (info.User.Email != "a@a.a")
-                    {
-                        <button class="btn btn-sm btn-outline-primary"
-                                @onclick="@(() => PromoteToContributor(info))">
-                            Promote
-                        </button>
-                        <button class="btn btn-sm btn-outline-secondary"
-                                @onclick="@(() => DemoteFromContributor(info))">
-                            Demote
-                        </button>
-                        <button class="btn btn-sm @(info.IsLockedOut ? "btn-outline-success" : "btn-outline-danger")"
-                                @onclick="@(() => ToggleLock(info))">
-                            @(info.IsLockedOut ? "Unlock" : "Lock")
-                        </button>
-                    }
-                    else
-                    {
-                        <span class="text-muted">--</span>
-                    }
-                </td>
-            </tr>
-        }
+            @foreach (var info in userInfos)
+            {
+                <tr>
+                    <td>@info.User.Email</td>
+                    <td>@string.Join(", ", info.Roles)</td>
+                    <td>@(info.IsActive ? "Active" : "Inactive")</td>
+                    <td>
+                        @if (info.User.Email != "a@a.a")
+                        {
+                            <!-- 
+                                FormName을 사용자별로 다르게 지정 
+                                (예: toggleForm_c@c.c 처럼 만들기 위해 ID나 Email을 이용)
+                            -->
+                            <EditForm Model="info" 
+                                    OnValidSubmit="@(() => ToggleActivePost(info))"
+                                    method="post" 
+                                    FormName="@($"toggleForm_{info.User.Id}")">
+
+                                <input type="hidden" name="UserId" value="@info.User.Id" />
+                                <button type="submit" 
+                                        class="btn btn-sm @(info.IsActive ? "btn-outline-danger" : "btn-outline-success")">
+                                    @(info.IsActive ? "Deactivate" : "Activate")
+                                </button>
+                            </EditForm>
+                        }
+                        else
+                        {
+                            <span class="text-muted">--</span>
+                        }
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 }
@@ -82,72 +85,41 @@ else
         }
     }
 
-    private async Task PromoteToContributor(UserInfo info)
-    {
-        Console.WriteLine("PromoteToContributor called for " + info.User.Email);
-        if (!info.Roles.Contains("Contributor"))
-        {
-            var result = await UserManager.AddToRoleAsync(info.User, "Contributor");
-            if (!result.Succeeded)
-            {
-                Console.WriteLine("Promote failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
-                return;
-            }
-        }
-        await RefreshUserInfos();
-    }
-
-    private async Task DemoteFromContributor(UserInfo info)
-    {
-        Console.WriteLine("DemoteFromContributor called for " + info.User.Email);
-        if (info.Roles.Contains("Contributor"))
-        {
-            var result = await UserManager.RemoveFromRoleAsync(info.User, "Contributor");
-            if (!result.Succeeded)
-            {
-                Console.WriteLine("Demote failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
-                return;
-            }
-        }
-        await RefreshUserInfos();
-    }
-
-    private async Task ToggleLock(UserInfo info)
-    {
-        Console.WriteLine("ToggleLock called for " + info.User.Email);
-        var result = info.IsLockedOut
-            ? await UserManager.SetLockoutEndDateAsync(info.User, null)
-            : await UserManager.SetLockoutEndDateAsync(info.User, DateTimeOffset.MaxValue);
-        if (!result.Succeeded)
-        {
-            Console.WriteLine("ToggleLock failed: " + string.Join(", ", result.Errors.Select(e => e.Description)));
-            return;
-        }
-        await RefreshUserInfos();
-    }
-
     private async Task RefreshUserInfos()
-{
-    var allUsers = await UserManager.Users.ToListAsync();
-    userInfos = new List<UserInfo>();
-    foreach (var u in allUsers)
     {
-        var roles = await UserManager.GetRolesAsync(u);
-        bool locked = await UserManager.IsLockedOutAsync(u);
-        userInfos.Add(new UserInfo
+        var allUsers = await UserManager.Users.ToListAsync();
+        userInfos = new List<UserInfo>();
+        foreach (var u in allUsers)
         {
-            User = u,
-            Roles = roles.ToList(),
-            IsLockedOut = locked
-        });
+            var roles = await UserManager.GetRolesAsync(u);
+            userInfos.Add(new UserInfo
+            {
+                User = u,
+                Roles = roles.ToList(),
+                IsActive = u.IsActive
+            });
+        }
+        StateHasChanged();
     }
-    StateHasChanged(); // UI 갱신 강제
-}
+
+    // 서버 폼으로 POST가 들어오면 호출되는 메서드
+    private async Task ToggleActivePost(UserInfo info)
+    {
+        // info.User.Id를 통해 DB에서 실제 사용자 재조회
+        var user = await UserManager.FindByIdAsync(info.User.Id);
+        if (user == null) return;
+
+        user.IsActive = !user.IsActive;
+        await UserManager.UpdateAsync(user);
+
+        // 다시 사용자 목록 갱신
+        await RefreshUserInfos();
+    }
 
     private class UserInfo
     {
         public ApplicationUser User { get; set; } = default!;
         public List<string> Roles { get; set; } = new();
-        public bool IsLockedOut { get; set; }
+        public bool IsActive { get; set; }
     }
 }
