@@ -2045,19 +2045,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/seungyeop/.nuget/packages/": {}
+    "/Users/chungyunsang/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/SuperBlogger.Web.csproj",
+      "projectUniqueName": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.Web/SuperBlogger.Web.csproj",
       "projectName": "SuperBlogger.Web",
-      "projectPath": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/SuperBlogger.Web.csproj",
-      "packagesPath": "/Users/seungyeop/.nuget/packages/",
-      "outputPath": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.Web/obj/",
+      "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.Web/SuperBlogger.Web.csproj",
+      "packagesPath": "/Users/chungyunsang/.nuget/packages/",
+      "outputPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/seungyeop/.nuget/NuGet/NuGet.Config"
+        "/Users/chungyunsang/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -2069,8 +2069,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj": {
-              "projectPath": "/Users/seungyeop/Documents/4870/Assignment/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj"
+            "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj": {
+              "projectPath": "/Users/chungyunsang/Downloads/SuperBlogger/SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj"
             }
           }
         }
