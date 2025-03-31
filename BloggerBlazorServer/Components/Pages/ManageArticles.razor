@@ -1,0 +1,154 @@
+@page "/manage-articles"
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@using BloggerBlazorServer.Models
+
+@inject ApplicationDbContext DbContext
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+@inject UserManager<ApplicationUser> UserManager
+
+<h3>Manage Articles</h3>
+
+@if (!isAdminOrContributor)
+{
+    <p>Access Denied.</p>
+}
+else
+{
+    <button class="btn btn-primary" @onclick="CreateArticle">Create New Article</button>
+
+    @if (articles == null)
+    {
+        <p>Loading...</p>
+    }
+    else if (!articles.Any())
+    {
+        <p>No articles found.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Created At</th>
+                    <th>Published</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var article in articles)
+            {
+                <tr>
+                    <td>@article.Title</td>
+                    <td>@article.Author?.UserName</td>
+                    <td>@article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</td>
+                    <td>@(article.IsPublished ? "Yes" : "No")</td>
+                    <td>
+                        @if (isAdmin)
+                        {
+                            <!-- 관리자: 모든 글 에딧/삭제 -->
+                            <button class="btn btn-sm btn-secondary" @onclick="@(() => EditArticle(article.Id))">Edit</button>
+                            <button class="btn btn-sm btn-danger" @onclick="@(() => DeleteArticle(article.Id))">Delete</button>
+                        }
+                        else if (isContributor)
+                        {
+                            <!-- 컨트리뷰터: 본인 글만 에딧/삭제 -->
+                            if (article.AuthorId == currentUserId)
+                            {
+                                <button class="btn btn-sm btn-secondary" @onclick="@(() => EditArticle(article.Id))">Edit</button>
+                                <button class="btn btn-sm btn-danger" @onclick="@(() => DeleteArticle(article.Id))">Delete</button>
+                            }
+                            else
+                            {
+                                <span class="text-muted">--</span>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    private List<Article>? articles;
+    private bool isAdmin = false;
+    private bool isContributor = false;
+    private bool isAdminOrContributor = false;
+    private string? currentUserId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
+            if (appUser != null)
+            {
+                isAdmin = await UserManager.IsInRoleAsync(appUser, "Admin");
+                isContributor = await UserManager.IsInRoleAsync(appUser, "Contributor");
+                currentUserId = appUser.Id;
+            }
+        }
+
+        isAdminOrContributor = (isAdmin || isContributor);
+
+        if (isAdminOrContributor)
+        {
+            await LoadArticles();
+        }
+    }
+
+    private async Task LoadArticles()
+    {
+        var all = await DbContext.Articles
+            .Include(a => a.Author)
+            .OrderByDescending(a => a.CreatedAt)
+            .ToListAsync();
+
+        // 관리자: 모든 글
+        // 컨트리뷰터: 본인 글 + 퍼블리시된 글
+        if (isAdmin)
+        {
+            articles = all;
+        }
+        else if (isContributor)
+        {
+            articles = all.Where(a => 
+                a.AuthorId == currentUserId 
+                || a.IsPublished).ToList();
+        }
+    }
+
+    private void CreateArticle()
+    {
+        NavigationManager.NavigateTo("/articles/create");
+    }
+
+    private void EditArticle(int id)
+    {
+        NavigationManager.NavigateTo($"/articles/edit/{id}");
+    }
+
+    private async Task DeleteArticle(int id)
+    {
+        var article = await DbContext.Articles.FindAsync(id);
+        if (article != null)
+        {
+            if (isAdmin || (isContributor && article.AuthorId == currentUserId))
+            {
+                DbContext.Articles.Remove(article);
+                await DbContext.SaveChangesAsync();
+                await LoadArticles();
+            }
+        }
+    }
+}

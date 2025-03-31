@@ -1,0 +1,142 @@
+@page "/articles/edit/{id:int}"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@using BloggerBlazorServer.Models
+
+@inject UserManager<ApplicationUser> UserManager
+@inject ApplicationDbContext DbContext
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+
+<h3>Edit Article</h3>
+
+@if (article == null)
+{
+    <p>Loading...</p>
+}
+else if (!canEdit)
+{
+    <p>You do not have permission to edit this article.</p>
+}
+else
+{
+    <EditForm Model="Input"
+              OnValidSubmit="HandleValidSubmit"
+              method="post"
+              FormName="editArticleForm">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <InputText class="form-control" @bind-Value="Input.Title" />
+            <ValidationMessage For="() => Input.Title" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Body</label>
+            <InputTextArea class="form-control" @bind-Value="Input.Body" Rows="5" />
+            <ValidationMessage For="() => Input.Body" />
+        </div>
+
+        <div class="form-check mb-3">
+            <InputCheckbox class="form-check-input" @bind-Value="Input.IsPublished" />
+            <label class="form-check-label">Publish Article</label>
+        </div>
+
+        <p>Created at: @Input.CreatedAt</p>
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter] public int id { get; set; }
+    private Article? article;
+    private bool canEdit = false;
+
+    [SupplyParameterFromForm]
+    private EditInputModel Input { get; set; } = new();
+
+    private sealed class EditInputModel
+    {
+        [Required]
+        [StringLength(200, MinimumLength = 5)]
+        public string Title { get; set; } = "";
+
+        [Required]
+        [MinLength(20)]
+        public string Body { get; set; } = "";
+
+        public bool IsPublished { get; set; } = false;
+        public DateTime CreatedAt { get; set; }
+        public string? AuthorId { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        string? currentUserId = null;
+        bool isAdmin = false;
+        bool isContributor = false;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
+            if (appUser != null)
+            {
+                isAdmin = await UserManager.IsInRoleAsync(appUser, "Admin");
+                isContributor = await UserManager.IsInRoleAsync(appUser, "Contributor");
+                currentUserId = appUser.Id;
+            }
+        }
+
+        article = await DbContext.Articles.FindAsync(id);
+        if (article == null) return;
+
+        // canEdit 로직
+        if (isAdmin)
+        {
+            canEdit = true;
+        }
+        else if (isContributor && article.AuthorId == currentUserId)
+        {
+            canEdit = true;
+        }
+
+        if (canEdit)
+        {
+            // EditInputModel에 DB 값 복사
+            Input.Title = article.Title;
+            Input.Body = article.Body;
+            Input.IsPublished = article.IsPublished;
+            Input.CreatedAt = article.CreatedAt;
+            Input.AuthorId = article.AuthorId;
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (article == null || !canEdit) return;
+
+        // 폼에서 들어온 값을 DB 엔티티에 적용
+        article.Title = Input.Title;
+        article.Body = Input.Body;
+        article.IsPublished = Input.IsPublished;
+        article.CreatedAt = Input.CreatedAt;
+        article.AuthorId = Input.AuthorId;
+
+        await DbContext.SaveChangesAsync();
+        NavigationManager.NavigateTo("/articles");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/articles");
+    }
+}

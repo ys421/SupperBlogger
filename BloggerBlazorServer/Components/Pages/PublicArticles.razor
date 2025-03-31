@@ -1,0 +1,136 @@
+@page "/articles"
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@using BloggerBlazorServer.Models
+
+@inject ApplicationDbContext DbContext
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+@inject UserManager<ApplicationUser> UserManager
+
+<h3>Articles</h3>
+
+@if (isContributorOrAdmin)
+{
+    <!-- Create Article 버튼 (관리자/컨트리뷰터 전용) -->
+    <EditForm Model="@dummyModel"
+              OnValidSubmit="HandleCreateArticlePost"
+              method="post"
+              FormName="createArticleForm">
+        <button type="submit" class="btn btn-primary mb-3">Create Article</button>
+    </EditForm>
+}
+
+@if (articles == null)
+{
+    <p>Loading...</p>
+}
+else if (!articles.Any())
+{
+    <p>No articles found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Created At</th>
+                @if (isContributorOrAdmin)
+                {
+                    <th>Actions</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in articles)
+            {
+                <tr>
+                    <td>
+                        <a href="/articles/@article.Id">@article.Title</a>
+                    </td>
+                    <td>@article.Author?.UserName</td>
+                    <td>@article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</td>
+                    @if (isContributorOrAdmin)
+                    {
+                        <td>
+                            @if (isAdmin || (isContributor && article.AuthorId == currentUserId))
+                            {
+<a href="@($"/articles/edit/{article.Id}")" class="btn btn-sm btn-secondary">Edit</a>
+
+                            }
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Article>? articles;
+    private object dummyModel = new(); // Create 버튼용 더미 모델
+    private bool isContributorOrAdmin = false;
+    private bool isAdmin = false;
+    private bool isContributor = false;
+    private string? currentUserId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // 현재 로그인 사용자 정보
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
+            if (appUser != null)
+            {
+                isAdmin = await UserManager.IsInRoleAsync(appUser, "Admin");
+                isContributor = await UserManager.IsInRoleAsync(appUser, "Contributor");
+                currentUserId = appUser.Id;
+            }
+        }
+        isContributorOrAdmin = (isAdmin || isContributor);
+
+        // 게시글 로딩:
+        // 일반 사용자는 퍼블리시된 글만, 
+        // 관리자와 컨트리뷰터는 모두 보이도록 처리.
+        if (isAdmin)
+        {
+            articles = await DbContext.Articles
+                .Include(a => a.Author)
+                .OrderByDescending(a => a.CreatedAt)
+                .ToListAsync();
+        }
+        else if (isContributor)
+        {
+            var all = await DbContext.Articles
+                .Include(a => a.Author)
+                .OrderByDescending(a => a.CreatedAt)
+                .ToListAsync();
+            // 컨트리뷰터는 본인 글은 모두, 타인의 글은 퍼블리시된 것만
+            articles = all.Where(a => a.AuthorId == currentUserId || a.IsPublished).ToList();
+        }
+        else
+        {
+            articles = await DbContext.Articles
+                .Include(a => a.Author)
+                .Where(a => a.IsPublished)
+                .OrderByDescending(a => a.CreatedAt)
+                .ToListAsync();
+        }
+    }
+
+    private void HandleCreateArticlePost()
+    {
+        NavigationManager.NavigateTo("/articles/create");
+    }
+
+    private void EditArticle(int id)
+    {
+        NavigationManager.NavigateTo($"/articles/edit/{id}");
+    }
+}

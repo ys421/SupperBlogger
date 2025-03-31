@@ -1,0 +1,89 @@
+@page "/articles/{id:int}"
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@using BloggerBlazorServer.Models
+
+@inject ApplicationDbContext DbContext
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+@inject UserManager<ApplicationUser> UserManager
+
+@if (article == null)
+{
+    <p>Loading...</p>
+}
+else if (!canView)
+{
+    <p>You do not have permission to view this article.</p>
+}
+else
+{
+    <h3>@article.Title</h3>
+    <p><small>By @article.Author?.UserName on @article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</small></p>
+    <div>@((MarkupString)article.Body)</div>
+}
+
+@code {
+    [Parameter] public int id { get; set; }
+    private Article? article;
+    private bool canView = false;
+
+    private bool isAdmin = false;
+    private bool isContributor = false;
+    private string? currentUserId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // 1) 사용자 정보 로딩
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
+            if (appUser != null)
+            {
+                isAdmin = await UserManager.IsInRoleAsync(appUser, "Admin");
+                isContributor = await UserManager.IsInRoleAsync(appUser, "Contributor");
+                currentUserId = appUser.Id;
+            }
+        }
+
+        // 2) 해당 글 로딩
+        article = await DbContext.Articles
+            .Include(a => a.Author)
+            .FirstOrDefaultAsync(a => a.Id == id);
+
+        if (article == null)
+        {
+            return; // article이 null이면 위에서 <p>Loading...</p>가 남음
+        }
+
+        // 3) canView 로직:
+        // - 퍼블리시된 글은 누구나 볼 수 있음
+        // - 퍼블리시되지 않은 글은 관리자 또는 작성자 본인만 볼 수 있음
+        if (article.IsPublished)
+        {
+            canView = true;
+        }
+        else
+        {
+            // unpublished
+            if (isAdmin) 
+            {
+                canView = true;
+            }
+            else if (isContributor && article.AuthorId == currentUserId)
+            {
+                // 작성자가 컨트리뷰터이고, 본인 글
+                canView = true;
+            }
+            else
+            {
+                canView = false;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@page "/articles/create"
+
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore
+@using BloggerBlazorServer.Data
+@using BloggerBlazorServer.Models
+
+@inject UserManager<ApplicationUser> UserManager
+@inject ApplicationDbContext DbContext
+@inject NavigationManager NavigationManager
+@inject ILogger<ArticleCreate> Logger
+@inject AuthenticationStateProvider AuthStateProvider
+
+<!--
+@inject IdentityRedirectManager RedirectManager 
+  -> 만약 IdentityRedirectManager를 사용하지 않는다면 주석 처리 혹은 제거
+-->
+
+<PageTitle>Create Article</PageTitle>
+
+<h1>Create Article</h1>
+
+<!-- 
+    서버 폼 방식:
+    1) method="post" 
+    2) FormName="createArticle"
+    3) OnValidSubmit="HandleValidSubmit"
+    4) [SupplyParameterFromForm] private InputModel Input { get; set; }
+-->
+<EditForm Model="Input" 
+          asp-route-returnUrl="@ReturnUrl"
+          method="post"
+          OnValidSubmit="HandleValidSubmit"
+          FormName="createArticle">
+
+    <DataAnnotationsValidator />
+    <h2>Create a new article.</h2>
+    <hr />
+    <ValidationSummary class="text-danger" role="alert" />
+
+    <div class="mb-3">
+        <label for="Input.Title" class="form-label">Title</label>
+        <InputText @bind-Value="Input.Title" id="Input.Title" class="form-control" />
+        <ValidationMessage For="() => Input.Title" />
+    </div>
+
+    <div class="mb-3">
+        <label for="Input.Body" class="form-label">Body</label>
+        <InputTextArea @bind-Value="Input.Body" id="Input.Body" class="form-control" Rows="5" />
+        <ValidationMessage For="() => Input.Body" />
+    </div>
+
+    <div class="form-check mb-3">
+        <InputCheckbox class="form-check-input" @bind-Value="Input.IsPublished" />
+        <label class="form-check-label">Publish Article</label>
+    </div>
+
+    <p>Created at (UTC): @Input.CreatedAt</p>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</EditForm>
+
+@code {
+    // 폼 데이터 바인딩을 위한 모델
+    [SupplyParameterFromForm]
+    private InputModel Input { get; set; } = new();
+
+    // (선택) ReturnUrl 쿼리 파라미터 (회원가입 템플릿과 동일한 구조)
+    [SupplyParameterFromQuery]
+    private string? ReturnUrl { get; set; }
+
+    // 폼에 표시할 속성들
+    private sealed class InputModel
+    {
+        [Required]
+        [StringLength(200, MinimumLength = 5, ErrorMessage = "Title must be at least 5 characters.")]
+        public string Title { get; set; } = "";
+
+        [Required]
+        [MinLength(20, ErrorMessage = "Body must be at least 20 characters.")]
+        public string Body { get; set; } = "";
+
+        public bool IsPublished { get; set; } = false;
+
+        // 작성 시각
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        // 작성자 ID (로그인 사용자)
+        public string? AuthorId { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // 로그인 사용자 가져오기
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
+            if (appUser != null)
+            {
+                Input.AuthorId = appUser.Id;
+            }
+        }
+    }
+
+    // 폼이 OnValidSubmit 되었을 때 (DataAnnotations 검증 통과 후) 실행
+    public async Task HandleValidSubmit()
+    {
+        // DB에 저장할 Article 엔티티 생성
+        var article = new Article
+        {
+            Title       = Input.Title,
+            Body        = Input.Body,
+            IsPublished = Input.IsPublished,
+            CreatedAt   = Input.CreatedAt,
+            AuthorId    = Input.AuthorId
+        };
+
+        DbContext.Articles.Add(article);
+        await DbContext.SaveChangesAsync();
+
+        Logger.LogInformation("Article created with Title: {Title}", article.Title);
+
+        // IdentityRedirectManager를 사용하지 않는다면, NavigationManager로 대체
+        NavigationManager.NavigateTo("/articles");
+
+        // 만약 IdentityRedirectManager를 사용한다면:
+        // RedirectManager.RedirectTo("/articles");
+    }
+}
