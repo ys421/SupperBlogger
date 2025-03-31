@@ -95,7 +95,7 @@
     {
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
-        if (user.Identity?.IsAuthenticated == true)
+        if (user.Identity?.IsAuthenticated == true && user.Identity.Name is not null)
         {
             var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
             if (appUser != null)
@@ -107,7 +107,6 @@
 
     public async Task HandleValidSubmit()
     {
-        // CreatedAt을 명시적으로 현재 시간으로 설정
         Input.CreatedAt = DateTime.UtcNow;
 
         var article = new Article

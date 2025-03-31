@@ -79,7 +79,7 @@ else
         var user = authState.User;
 
         ApplicationUser? appUser = null;
-        if (user.Identity?.IsAuthenticated == true)
+        if (user.Identity?.IsAuthenticated == true && user.Identity.Name is not null)
         {
             appUser = await UserManager.FindByNameAsync(user.Identity.Name);
             if (appUser != null)

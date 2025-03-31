@@ -82,7 +82,7 @@ else
     {
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
-        if (user.Identity?.IsAuthenticated == true)
+        if (user.Identity?.IsAuthenticated == true && user.Identity.Name is not null)
         {
             var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
             if (appUser != null)
@@ -94,7 +94,6 @@ else
         }
         isContributorOrAdmin = (isAdmin || isContributor);
 
-        // StartDate와 EndDate 필터링 조건 제거
         if (isAdmin)
         {
             articles = await DbContext.Articles

@@ -7,7 +7,6 @@
 @inject NavigationManager NavigationManager
 @inject AuthenticationStateProvider AuthenticationStateProvider
 
-
 <h3>Manage Users (Server Form)</h3>
 
 @if (!isAdmin)
@@ -39,15 +38,10 @@ else
                     <td>
                         @if (info.User.Email != "a@a.a")
                         {
-                            <!-- 
-                                FormName을 사용자별로 다르게 지정 
-                                (예: toggleForm_c@c.c 처럼 만들기 위해 ID나 Email을 이용)
-                            -->
                             <EditForm Model="info" 
                                     OnValidSubmit="@(() => ToggleActivePost(info))"
                                     method="post" 
                                     FormName="@($"toggleForm_{info.User.Id}")">
-
                                 <input type="hidden" name="UserId" value="@info.User.Id" />
                                 <button type="submit" 
                                         class="btn btn-sm @(info.IsActive ? "btn-outline-danger" : "btn-outline-success")">
@@ -74,10 +68,13 @@ else
     {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
-        if (user.Identity?.IsAuthenticated == true)
+        if (user.Identity?.IsAuthenticated == true && user.Identity.Name is not null)
         {
             var currentUser = await UserManager.FindByNameAsync(user.Identity.Name);
-            isAdmin = await UserManager.IsInRoleAsync(currentUser, "Admin");
+            if (currentUser != null)
+            {
+                isAdmin = await UserManager.IsInRoleAsync(currentUser, "Admin");
+            }
         }
 
         if (isAdmin)
@@ -103,17 +100,14 @@ else
         StateHasChanged();
     }
 
-    // 서버 폼으로 POST가 들어오면 호출되는 메서드
     private async Task ToggleActivePost(UserInfo info)
     {
-        // info.User.Id를 통해 DB에서 실제 사용자 재조회
         var user = await UserManager.FindByIdAsync(info.User.Id);
         if (user == null) return;
 
         user.IsActive = !user.IsActive;
         await UserManager.UpdateAsync(user);
 
-        // 다시 사용자 목록 갱신
         await RefreshUserInfos();
     }
 

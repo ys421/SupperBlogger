@@ -40,11 +40,10 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        // 1) 사용자 정보 로딩
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
 
-        if (user.Identity?.IsAuthenticated == true)
+        if (user.Identity?.IsAuthenticated == true && user.Identity.Name is not null)
         {
             var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
             if (appUser != null)
@@ -55,7 +54,6 @@ else
             }
         }
 
-        // 2) 해당 글 로딩, Creator 네비게이션 프로퍼티 포함
         article = await DbContext.Articles
             .Include(a => a.Creator)
             .FirstOrDefaultAsync(a => a.Id == id);
@@ -65,9 +63,6 @@ else
             return;
         }
 
-        // 3) canView 로직:
-        // - 퍼블리시된 글은 누구나 볼 수 있음.
-        // - 퍼블리시되지 않은 글은 관리자 또는 원 작성자(즉, CreatedBy가 현재 사용자와 일치)만 볼 수 있음.
         if (article.IsPublished)
         {
             canView = true;

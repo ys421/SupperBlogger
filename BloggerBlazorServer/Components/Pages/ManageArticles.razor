@@ -51,13 +51,11 @@ else
                         <td>
                             @if (isAdmin)
                             {
-                                <!-- 관리자는 모든 글 에딧/삭제 -->
                                 <button class="btn btn-sm btn-secondary" @onclick="@(() => EditArticle(article.Id))">Edit</button>
                                 <button class="btn btn-sm btn-danger" @onclick="@(() => DeleteArticle(article.Id))">Delete</button>
                             }
                             else if (isContributor)
                             {
-                                <!-- 컨트리뷰터: 본인 글은 (CreatedBy == currentUserId) 에딧/삭제 -->
                                 @if (article.CreatedBy == currentUserId)
                                 {
                                     <button class="btn btn-sm btn-secondary" @onclick="@(() => EditArticle(article.Id))">Edit</button>
@@ -88,7 +86,7 @@ else
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
 
-        if (user.Identity?.IsAuthenticated == true)
+        if (user.Identity?.IsAuthenticated == true && user.Identity.Name is not null)
         {
             var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
             if (appUser != null)
@@ -110,7 +108,7 @@ else
     private async Task LoadArticles()
     {
         var all = await DbContext.Articles
-            .Include(a => a.Creator)  // Article.Creator는 CreatedBy와 매핑된 네비게이션 프로퍼티
+            .Include(a => a.Creator)
             .OrderByDescending(a => a.CreatedAt)
             .ToListAsync();
 
@@ -120,7 +118,6 @@ else
         }
         else if (isContributor)
         {
-            // 컨트리뷰터는 본인 글(원 작성자)와 타인의 퍼블리시된 글만 보이도록 함
             articles = all.Where(a => a.CreatedBy == currentUserId || a.IsPublished).ToList();
         }
     }
