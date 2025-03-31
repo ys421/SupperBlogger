@@ -83,7 +83,6 @@ internal static class IdentityComponentsEndpointRouteBuilderExtensions
             var userId = await userManager.GetUserIdAsync(user);
             downloadLogger.LogInformation("User with ID '{UserId}' asked for their personal data.", userId);
 
-            // Only include personal data for download
             var personalData = new Dictionary<string, string>();
             var personalDataProps = typeof(ApplicationUser).GetProperties().Where(
                 prop => Attribute.IsDefined(prop, typeof(PersonalDataAttribute)));

@@ -56,14 +56,12 @@
     {
         if (HttpMethods.IsGet(HttpContext.Request.Method))
         {
-            // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
         }
     }
 
     public async Task LoginUser()
     {
-        // 추가: 입력한 이메일로 사용자를 먼저 조회
         var user = await SignInManager.UserManager.FindByEmailAsync(Input.Email);
         if (user != null && !user.IsActive)
         {
@@ -71,7 +69,6 @@
             return;
         }
         
-        // 기존 로그인 로직 시작
         var result = await SignInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
         if (result.Succeeded)
         {

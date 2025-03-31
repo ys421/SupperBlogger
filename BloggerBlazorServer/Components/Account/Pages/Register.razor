@@ -73,7 +73,6 @@
             return;
         }
 
-        // 새 유저가 만들어졌으니, "User" 역할을 자동으로 부여
         Logger.LogInformation("User created a new account with password.");
         await UserManager.AddToRoleAsync(user, "Contributor");
 

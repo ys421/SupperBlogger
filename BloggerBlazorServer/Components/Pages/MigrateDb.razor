@@ -24,11 +24,9 @@ else
         using var scope = Services.CreateScope();
         try
         {
-            // 1) 마이그레이션: DB 스키마 업데이트
             var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
             await dbContext.Database.MigrateAsync();
 
-            // 2) SeedData.cs의 시드 로직 실행: 역할, 관리자, 컨트리뷰터 계정 생성
             await SeedData.SeedRolesAndAdminAndContributorAsync(scope.ServiceProvider);
 
             message = "Migration & seeding succeeded!";
