@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BloggerBlazorServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2d89568a3e27af74f051172b6ed0fb2e397cd02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e527693a095ed8ddd90869b7fbc7bd302cf112b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BloggerBlazorServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BloggerBlazorServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

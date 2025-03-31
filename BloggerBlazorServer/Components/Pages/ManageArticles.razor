@@ -41,36 +41,36 @@ else
                 </tr>
             </thead>
             <tbody>
-            @foreach (var article in articles)
-            {
-                <tr>
-                    <td>@article.Title</td>
-                    <td>@article.Author?.UserName</td>
-                    <td>@article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</td>
-                    <td>@(article.IsPublished ? "Yes" : "No")</td>
-                    <td>
-                        @if (isAdmin)
-                        {
-                            <!-- 관리자: 모든 글 에딧/삭제 -->
-                            <button class="btn btn-sm btn-secondary" @onclick="@(() => EditArticle(article.Id))">Edit</button>
-                            <button class="btn btn-sm btn-danger" @onclick="@(() => DeleteArticle(article.Id))">Delete</button>
-                        }
-                        else if (isContributor)
-                        {
-                            <!-- 컨트리뷰터: 본인 글만 에딧/삭제 -->
-                            if (article.AuthorId == currentUserId)
+                @foreach (var article in articles)
+                {
+                    <tr>
+                        <td>@article.Title</td>
+                        <td>@article.Creator?.UserName</td>
+                        <td>@article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</td>
+                        <td>@(article.IsPublished ? "Yes" : "No")</td>
+                        <td>
+                            @if (isAdmin)
                             {
+                                <!-- 관리자는 모든 글 에딧/삭제 -->
                                 <button class="btn btn-sm btn-secondary" @onclick="@(() => EditArticle(article.Id))">Edit</button>
                                 <button class="btn btn-sm btn-danger" @onclick="@(() => DeleteArticle(article.Id))">Delete</button>
                             }
-                            else
+                            else if (isContributor)
                             {
-                                <span class="text-muted">--</span>
+                                <!-- 컨트리뷰터: 본인 글은 (CreatedBy == currentUserId) 에딧/삭제 -->
+                                @if (article.CreatedBy == currentUserId)
+                                {
+                                    <button class="btn btn-sm btn-secondary" @onclick="@(() => EditArticle(article.Id))">Edit</button>
+                                    <button class="btn btn-sm btn-danger" @onclick="@(() => DeleteArticle(article.Id))">Delete</button>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">--</span>
+                                }
                             }
-                        }
-                    </td>
-                </tr>
-            }
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
     }
@@ -110,21 +110,18 @@ else
     private async Task LoadArticles()
     {
         var all = await DbContext.Articles
-            .Include(a => a.Author)
+            .Include(a => a.Creator)  // Article.Creator는 CreatedBy와 매핑된 네비게이션 프로퍼티
             .OrderByDescending(a => a.CreatedAt)
             .ToListAsync();
 
-        // 관리자: 모든 글
-        // 컨트리뷰터: 본인 글 + 퍼블리시된 글
         if (isAdmin)
         {
             articles = all;
         }
         else if (isContributor)
         {
-            articles = all.Where(a => 
-                a.AuthorId == currentUserId 
-                || a.IsPublished).ToList();
+            // 컨트리뷰터는 본인 글(원 작성자)와 타인의 퍼블리시된 글만 보이도록 함
+            articles = all.Where(a => a.CreatedBy == currentUserId || a.IsPublished).ToList();
         }
     }
 
@@ -143,7 +140,7 @@ else
         var article = await DbContext.Articles.FindAsync(id);
         if (article != null)
         {
-            if (isAdmin || (isContributor && article.AuthorId == currentUserId))
+            if (isAdmin || (isContributor && article.CreatedBy == currentUserId))
             {
                 DbContext.Articles.Remove(article);
                 await DbContext.SaveChangesAsync();

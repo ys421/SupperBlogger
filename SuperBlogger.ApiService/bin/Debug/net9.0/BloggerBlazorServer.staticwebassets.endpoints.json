@@ -3,459 +3,8 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "SuperBlogger.ApiService.0kyx8zvwxe.styles.css",
-      "AssetFile": "SuperBlogger.ApiService.styles.css.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.011111111111"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "89"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"B7yAvo/cKYdlVGwYBq4WtSfecA6Aimmg7ay0l4iNe6k=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 07:53:35 GMT"
-        },
-        {
-          "Name": "Link",
-          "Value": "<_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css>; rel=\"preload\"; as=\"style\""
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0kyx8zvwxe"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU="
-        },
-        {
-          "Name": "label",
-          "Value": "SuperBlogger.ApiService.styles.css"
-        }
-      ]
-    },
-    {
-      "Route": "SuperBlogger.ApiService.0kyx8zvwxe.styles.css",
-      "AssetFile": "SuperBlogger.ApiService.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 07:53:35 GMT"
-        },
-        {
-          "Name": "Link",
-          "Value": "<_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css>; rel=\"preload\"; as=\"style\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0kyx8zvwxe"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU="
-        },
-        {
-          "Name": "label",
-          "Value": "SuperBlogger.ApiService.styles.css"
-        }
-      ]
-    },
-    {
-      "Route": "SuperBlogger.ApiService.0kyx8zvwxe.styles.css.gz",
-      "AssetFile": "SuperBlogger.ApiService.styles.css.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "89"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"B7yAvo/cKYdlVGwYBq4WtSfecA6Aimmg7ay0l4iNe6k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 07:53:35 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0kyx8zvwxe"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-B7yAvo/cKYdlVGwYBq4WtSfecA6Aimmg7ay0l4iNe6k="
-        },
-        {
-          "Name": "label",
-          "Value": "SuperBlogger.ApiService.styles.css.gz"
-        }
-      ]
-    },
-    {
-      "Route": "SuperBlogger.ApiService.styles.css",
-      "AssetFile": "SuperBlogger.ApiService.styles.css.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.011111111111"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "89"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"B7yAvo/cKYdlVGwYBq4WtSfecA6Aimmg7ay0l4iNe6k=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 07:53:35 GMT"
-        },
-        {
-          "Name": "Link",
-          "Value": "<_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css>; rel=\"preload\"; as=\"style\""
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU="
-        }
-      ]
-    },
-    {
-      "Route": "SuperBlogger.ApiService.styles.css",
-      "AssetFile": "SuperBlogger.ApiService.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "87"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 07:53:35 GMT"
-        },
-        {
-          "Name": "Link",
-          "Value": "<_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css>; rel=\"preload\"; as=\"style\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MJENxESBZ6hgrrlHd8nDV3daY+cOvT9z0JPuyfkY+SU="
-        }
-      ]
-    },
-    {
-      "Route": "SuperBlogger.ApiService.styles.css.gz",
-      "AssetFile": "SuperBlogger.ApiService.styles.css.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "89"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"B7yAvo/cKYdlVGwYBq4WtSfecA6Aimmg7ay0l4iNe6k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 07:53:35 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-B7yAvo/cKYdlVGwYBq4WtSfecA6Aimmg7ay0l4iNe6k="
-        }
-      ]
-    },
-    {
-      "Route": "_content/BloggerBlazorServer/BloggerBlazorServer.bundle.scp.css",
-      "AssetFile": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000423728814"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2359"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"55fGlNJUukrXWN1HzJu9OUatUSkNiw85szUrmU+Zs1A=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 02:22:59 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo="
-        }
-      ]
-    },
-    {
-      "Route": "_content/BloggerBlazorServer/BloggerBlazorServer.bundle.scp.css",
-      "AssetFile": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8639"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 02:22:59 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo="
-        }
-      ]
-    },
-    {
-      "Route": "_content/BloggerBlazorServer/BloggerBlazorServer.bundle.scp.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2359"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"55fGlNJUukrXWN1HzJu9OUatUSkNiw85szUrmU+Zs1A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 31 Mar 2025 02:22:59 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-55fGlNJUukrXWN1HzJu9OUatUSkNiw85szUrmU+Zs1A="
-        }
-      ]
-    },
-    {
-      "Route": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css",
-      "AssetFile": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css.gz",
+      "Route": "BloggerBlazorServer.kfpufcaf46.styles.css",
+      "AssetFile": "BloggerBlazorServer.styles.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -512,13 +61,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/BloggerBlazorServer.bundle.scp.css"
+          "Value": "BloggerBlazorServer.styles.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css",
-      "AssetFile": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css",
+      "Route": "BloggerBlazorServer.kfpufcaf46.styles.css",
+      "AssetFile": "BloggerBlazorServer.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -557,13 +106,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/BloggerBlazorServer.bundle.scp.css"
+          "Value": "BloggerBlazorServer.styles.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/BloggerBlazorServer.kfpufcaf46.bundle.scp.css.gz",
+      "Route": "BloggerBlazorServer.kfpufcaf46.styles.css.gz",
+      "AssetFile": "BloggerBlazorServer.styles.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -610,13 +159,150 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/BloggerBlazorServer.bundle.scp.css.gz"
+          "Value": "BloggerBlazorServer.styles.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/app.css",
-      "AssetFile": "_content/BloggerBlazorServer/app.css.gz",
+      "Route": "BloggerBlazorServer.styles.css",
+      "AssetFile": "BloggerBlazorServer.styles.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000423728814"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2359"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"55fGlNJUukrXWN1HzJu9OUatUSkNiw85szUrmU+Zs1A=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 02:22:59 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo="
+        }
+      ]
+    },
+    {
+      "Route": "BloggerBlazorServer.styles.css",
+      "AssetFile": "BloggerBlazorServer.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8639"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 02:22:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QFsui4US1C96/PsMGsRt46YHQrivLsImb6uE54nPCEo="
+        }
+      ]
+    },
+    {
+      "Route": "BloggerBlazorServer.styles.css.gz",
+      "AssetFile": "BloggerBlazorServer.styles.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2359"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"55fGlNJUukrXWN1HzJu9OUatUSkNiw85szUrmU+Zs1A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 31 Mar 2025 02:22:59 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-55fGlNJUukrXWN1HzJu9OUatUSkNiw85szUrmU+Zs1A="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "app.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -670,8 +356,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/app.css",
-      "AssetFile": "_content/BloggerBlazorServer/app.css",
+      "Route": "app.css",
+      "AssetFile": "app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -707,8 +393,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/app.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/app.css.gz",
+      "Route": "app.css.gz",
+      "AssetFile": "app.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -752,8 +438,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/app.khy4lop6wu.css",
-      "AssetFile": "_content/BloggerBlazorServer/app.css.gz",
+      "Route": "app.khy4lop6wu.css",
+      "AssetFile": "app.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -810,13 +496,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/app.css"
+          "Value": "app.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/app.khy4lop6wu.css",
-      "AssetFile": "_content/BloggerBlazorServer/app.css",
+      "Route": "app.khy4lop6wu.css",
+      "AssetFile": "app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -855,13 +541,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/app.css"
+          "Value": "app.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/app.khy4lop6wu.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/app.css.gz",
+      "Route": "app.khy4lop6wu.css.gz",
+      "AssetFile": "app.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -908,13 +594,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/app.css.gz"
+          "Value": "app.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/favicon.ifv42okdf2.png",
-      "AssetFile": "_content/BloggerBlazorServer/favicon.png",
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -953,13 +639,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/favicon.png"
+          "Value": "favicon.png"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/favicon.png",
-      "AssetFile": "_content/BloggerBlazorServer/favicon.png",
+      "Route": "favicon.png",
+      "AssetFile": "favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -995,8 +681,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1053,13 +739,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1098,13 +784,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1151,13 +837,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1211,8 +897,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1248,8 +934,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1306,13 +992,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1351,13 +1037,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1404,13 +1090,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1454,8 +1140,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1509,8 +1195,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1546,8 +1232,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1591,8 +1277,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1646,8 +1332,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1683,8 +1369,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1741,13 +1427,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1786,13 +1472,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1839,13 +1525,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1889,8 +1575,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1944,8 +1630,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1981,8 +1667,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2026,8 +1712,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2084,13 +1770,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2129,13 +1815,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2182,13 +1868,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2242,8 +1928,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2279,8 +1965,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2337,13 +2023,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2382,13 +2068,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2435,13 +2121,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2485,8 +2171,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2540,8 +2226,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2577,8 +2263,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2622,8 +2308,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2680,13 +2366,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2725,13 +2411,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2778,13 +2464,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2838,8 +2524,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2875,8 +2561,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2933,13 +2619,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2978,13 +2664,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3031,13 +2717,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3081,8 +2767,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3136,8 +2822,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3173,8 +2859,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3218,8 +2904,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3276,13 +2962,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3321,13 +3007,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3374,13 +3060,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3434,8 +3120,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3471,8 +3157,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3529,13 +3215,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3574,13 +3260,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3627,13 +3313,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3677,8 +3363,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3732,8 +3418,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3769,8 +3455,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3814,8 +3500,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3872,13 +3558,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3917,13 +3603,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3970,13 +3656,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4030,8 +3716,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4067,8 +3753,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4125,13 +3811,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4170,13 +3856,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4223,13 +3909,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4273,8 +3959,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4328,8 +4014,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4365,8 +4051,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4410,8 +4096,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4465,8 +4151,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4502,8 +4188,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4560,13 +4246,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4605,13 +4291,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4658,13 +4344,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4708,8 +4394,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4763,8 +4449,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4800,8 +4486,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4845,8 +4531,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4900,8 +4586,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4937,8 +4623,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4982,8 +4668,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5040,13 +4726,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5085,13 +4771,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5138,13 +4824,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5198,8 +4884,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5235,8 +4921,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5280,8 +4966,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5338,13 +5024,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5383,13 +5069,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5436,13 +5122,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5499,13 +5185,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5544,13 +5230,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5597,13 +5283,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5660,13 +5346,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5705,13 +5391,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-reboot.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5758,13 +5444,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-reboot.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5818,8 +5504,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5855,8 +5541,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5900,8 +5586,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5955,8 +5641,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5992,8 +5678,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6037,8 +5723,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6095,13 +5781,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6140,13 +5826,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6193,13 +5879,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6256,13 +5942,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6301,13 +5987,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6354,13 +6040,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6414,8 +6100,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6451,8 +6137,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6509,13 +6195,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6554,13 +6240,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6607,13 +6293,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6657,8 +6343,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6712,8 +6398,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6749,8 +6435,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6794,8 +6480,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6852,13 +6538,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6897,13 +6583,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6950,13 +6636,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7010,8 +6696,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7047,8 +6733,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7092,8 +6778,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7150,13 +6836,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7195,13 +6881,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7248,13 +6934,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7308,8 +6994,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7345,8 +7031,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7390,8 +7076,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7448,13 +7134,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7493,13 +7179,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7546,13 +7232,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7606,8 +7292,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7643,8 +7329,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7688,8 +7374,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7743,8 +7429,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7780,8 +7466,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7825,8 +7511,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7883,13 +7569,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7928,13 +7614,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7981,13 +7667,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -8044,13 +7730,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8089,13 +7775,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8142,13 +7828,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -8202,8 +7888,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8239,8 +7925,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8284,8 +7970,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -8339,8 +8025,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8376,8 +8062,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8421,8 +8107,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -8479,13 +8165,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8524,13 +8210,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8577,13 +8263,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -8640,13 +8326,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8685,13 +8371,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8738,13 +8424,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -8798,8 +8484,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8835,8 +8521,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8880,8 +8566,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -8935,8 +8621,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8972,8 +8658,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9017,8 +8703,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9075,13 +8761,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9120,13 +8806,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9173,13 +8859,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9236,13 +8922,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9281,13 +8967,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9334,13 +9020,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9394,8 +9080,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9431,8 +9117,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9476,8 +9162,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9534,13 +9220,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9579,13 +9265,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9632,13 +9318,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9692,8 +9378,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9729,8 +9415,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9774,8 +9460,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9829,8 +9515,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9866,8 +9552,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9924,13 +9610,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9969,13 +9655,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10022,13 +9708,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10072,8 +9758,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10127,8 +9813,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10164,8 +9850,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10209,8 +9895,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10267,13 +9953,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10312,13 +9998,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.min.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10365,13 +10051,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10428,13 +10114,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10473,13 +10159,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css"
+          "Value": "lib/bootstrap/dist/css/bootstrap.css"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.gz",
+      "Route": "lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css.gz",
+      "AssetFile": "lib/bootstrap/dist/css/bootstrap.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10526,13 +10212,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/css/bootstrap.css.gz"
+          "Value": "lib/bootstrap/dist/css/bootstrap.css.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10589,13 +10275,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10634,13 +10320,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10687,13 +10373,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10747,8 +10433,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10784,8 +10470,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -10842,13 +10528,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10887,13 +10573,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10940,13 +10626,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10990,8 +10676,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11045,8 +10731,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11082,8 +10768,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11127,8 +10813,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11185,13 +10871,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11230,13 +10916,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11283,13 +10969,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11343,8 +11029,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11380,8 +11066,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11425,8 +11111,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11483,13 +11169,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11528,13 +11214,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11581,13 +11267,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11641,8 +11327,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11678,8 +11364,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11723,8 +11409,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11778,8 +11464,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11815,8 +11501,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11860,8 +11546,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11918,13 +11604,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11963,13 +11649,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12016,13 +11702,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12076,8 +11762,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12113,8 +11799,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12158,8 +11844,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12216,13 +11902,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12261,13 +11947,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12314,13 +12000,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12374,8 +12060,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12411,8 +12097,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12456,8 +12142,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12511,8 +12197,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12548,8 +12234,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12593,8 +12279,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12651,13 +12337,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12696,13 +12382,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12749,13 +12435,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12812,13 +12498,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12857,13 +12543,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.esm.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12910,13 +12596,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.esm.js.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.esm.js.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -12970,8 +12656,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13007,8 +12693,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13052,8 +12738,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13110,13 +12796,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13155,13 +12841,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13208,13 +12894,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.js.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13268,8 +12954,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13305,8 +12991,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.js.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13350,8 +13036,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13408,13 +13094,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.min.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13453,13 +13139,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.min.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13506,13 +13192,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.min.js.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13566,8 +13252,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13603,8 +13289,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13661,13 +13347,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.min.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13706,13 +13392,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map"
+          "Value": "lib/bootstrap/dist/js/bootstrap.min.js.map"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13759,13 +13445,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.min.js.map.gz"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13809,8 +13495,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -13864,8 +13550,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13901,8 +13587,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.min.js.map.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13946,8 +13632,8 @@
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -14004,13 +13690,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js",
+      "Route": "lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14049,13 +13735,13 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js"
+          "Value": "lib/bootstrap/dist/js/bootstrap.js"
         }
       ]
     },
     {
-      "Route": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js.gz",
-      "AssetFile": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.gz",
+      "Route": "lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js.gz",
+      "AssetFile": "lib/bootstrap/dist/js/bootstrap.js.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14102,7 +13788,7 @@
         },
         {
           "Name": "label",
-          "Value": "_content/BloggerBlazorServer/lib/bootstrap/dist/js/bootstrap.js.gz"
+          "Value": "lib/bootstrap/dist/js/bootstrap.js.gz"
         }
       ]
     }

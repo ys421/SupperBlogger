@@ -21,7 +21,11 @@ else if (!canView)
 else
 {
     <h3>@article.Title</h3>
-    <p><small>By @article.Author?.UserName on @article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</small></p>
+    <p>
+        <small>
+            By @article.Creator?.UserName on @article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")
+        </small>
+    </p>
     <div>@((MarkupString)article.Body)</div>
 }
 
@@ -51,33 +55,31 @@ else
             }
         }
 
-        // 2) 해당 글 로딩
+        // 2) 해당 글 로딩, Creator 네비게이션 프로퍼티 포함
         article = await DbContext.Articles
-            .Include(a => a.Author)
+            .Include(a => a.Creator)
             .FirstOrDefaultAsync(a => a.Id == id);
 
         if (article == null)
         {
-            return; // article이 null이면 위에서 <p>Loading...</p>가 남음
+            return;
         }
 
         // 3) canView 로직:
-        // - 퍼블리시된 글은 누구나 볼 수 있음
-        // - 퍼블리시되지 않은 글은 관리자 또는 작성자 본인만 볼 수 있음
+        // - 퍼블리시된 글은 누구나 볼 수 있음.
+        // - 퍼블리시되지 않은 글은 관리자 또는 원 작성자(즉, CreatedBy가 현재 사용자와 일치)만 볼 수 있음.
         if (article.IsPublished)
         {
             canView = true;
         }
         else
         {
-            // unpublished
-            if (isAdmin) 
+            if (isAdmin)
             {
                 canView = true;
             }
-            else if (isContributor && article.AuthorId == currentUserId)
+            else if (isContributor && article.CreatedBy == currentUserId)
             {
-                // 작성자가 컨트리뷰터이고, 본인 글
                 canView = true;
             }
             else

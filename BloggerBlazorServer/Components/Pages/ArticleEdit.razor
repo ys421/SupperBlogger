@@ -1,15 +1,15 @@
 @page "/articles/edit/{id:int}"
-@using System.ComponentModel.DataAnnotations
-@using Microsoft.AspNetCore.Identity
 @using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Identity
 @using Microsoft.EntityFrameworkCore
 @using BloggerBlazorServer.Data
 @using BloggerBlazorServer.Models
 
-@inject UserManager<ApplicationUser> UserManager
 @inject ApplicationDbContext DbContext
 @inject NavigationManager NavigationManager
 @inject AuthenticationStateProvider AuthStateProvider
+@inject UserManager<ApplicationUser> UserManager
+@inject ILogger<ArticleEdit> Logger
 
 <h3>Edit Article</h3>
 
@@ -23,120 +23,91 @@ else if (!canEdit)
 }
 else
 {
-    <EditForm Model="Input"
-              OnValidSubmit="HandleValidSubmit"
-              method="post"
-              FormName="editArticleForm">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
+    <!-- 전통적인 HTML 폼 방식으로, action은 서버의 ArticlesController.Edit 액션으로 POST 전송 -->
+    <form method="post" action="/Article/Edit">
+        <!-- Article Id (숨김 필드) -->
+        <input type="hidden" name="Id" value="@article.Id" />
+
+        <!-- 원 작성자: 수정 시 변경하지 않음 -->
+        <input type="hidden" name="CreatedBy" value="@article.CreatedBy" />
+
+        <!-- 최종 수정자: 현재 로그인 사용자의 실제 ID를 전송 -->
+        <input type="hidden" name="LastModifiedBy" value="@currentUserId" />
 
         <div class="mb-3">
             <label class="form-label">Title</label>
-            <InputText class="form-control" @bind-Value="Input.Title" />
-            <ValidationMessage For="() => Input.Title" />
+            <input type="text" name="Title" class="form-control" value="@article.Title" required minlength="5" maxlength="200" />
         </div>
-
         <div class="mb-3">
             <label class="form-label">Body</label>
-            <InputTextArea class="form-control" @bind-Value="Input.Body" Rows="5" />
-            <ValidationMessage For="() => Input.Body" />
+            <textarea name="Body" class="form-control" rows="5" required minlength="20">@article.Body</textarea>
         </div>
-
         <div class="form-check mb-3">
-            <InputCheckbox class="form-check-input" @bind-Value="Input.IsPublished" />
+            <!-- 체크박스 값 전송을 위해 숨김 필드와 체크박스를 함께 사용 -->
+            <input type="hidden" name="IsPublished" value="false" />
+            <input type="checkbox" name="IsPublished" class="form-check-input" value="true" @(article.IsPublished ? "checked" : "") />
             <label class="form-check-label">Publish Article</label>
         </div>
-
-        <p>Created at: @Input.CreatedAt</p>
-
+        <p>Created at: @article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</p>
         <button type="submit" class="btn btn-primary">Save Changes</button>
-        <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
-    </EditForm>
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='/articles'">Cancel</button>
+    </form>
 }
 
 @code {
     [Parameter] public int id { get; set; }
     private Article? article;
     private bool canEdit = false;
-
-    [SupplyParameterFromForm]
-    private EditInputModel Input { get; set; } = new();
-
-    private sealed class EditInputModel
-    {
-        [Required]
-        [StringLength(200, MinimumLength = 5)]
-        public string Title { get; set; } = "";
-
-        [Required]
-        [MinLength(20)]
-        public string Body { get; set; } = "";
-
-        public bool IsPublished { get; set; } = false;
-        public DateTime CreatedAt { get; set; }
-        public string? AuthorId { get; set; }
-    }
+    private string? currentUserId;
 
     protected override async Task OnInitializedAsync()
     {
+        Logger.LogInformation("ArticleEdit OnInitializedAsync 시작됨");
+
+        // 로그인 사용자 확인 및 실제 사용자 ID 가져오기
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
-        string? currentUserId = null;
-        bool isAdmin = false;
-        bool isContributor = false;
-
+        ApplicationUser? appUser = null;
         if (user.Identity?.IsAuthenticated == true)
         {
-            var appUser = await UserManager.FindByNameAsync(user.Identity.Name);
+            appUser = await UserManager.FindByNameAsync(user.Identity.Name);
             if (appUser != null)
             {
-                isAdmin = await UserManager.IsInRoleAsync(appUser, "Admin");
-                isContributor = await UserManager.IsInRoleAsync(appUser, "Contributor");
-                currentUserId = appUser.Id;
+                currentUserId = appUser.Id; // 실제 DB에 존재하는 사용자 Id
+                Logger.LogInformation("CurrentUserId: {UserId}", currentUserId);
             }
         }
 
-        article = await DbContext.Articles.FindAsync(id);
-        if (article == null) return;
+        // DB에서 해당 Article 로드
+        article = await DbContext.Articles.FirstOrDefaultAsync(a => a.Id == id);
+        if (article == null)
+        {
+            Logger.LogWarning("Article with Id {Id} not found", id);
+            return;
+        }
 
-        // canEdit 로직
+        // 권한 체크: 관리자이면 수정 가능, 컨트리뷰터이면 원 작성자(즉, CreatedBy가 현재 사용자와 일치)만 수정 가능
+        bool isAdmin = false;
+        bool isContributor = false;
+        if (user.Identity?.IsAuthenticated == true && appUser != null)
+        {
+            isAdmin = await UserManager.IsInRoleAsync(appUser, "Admin");
+            isContributor = await UserManager.IsInRoleAsync(appUser, "Contributor");
+        }
+
         if (isAdmin)
         {
             canEdit = true;
         }
-        else if (isContributor && article.AuthorId == currentUserId)
+        else if (isContributor && article.CreatedBy == currentUserId)
         {
             canEdit = true;
         }
-
-        if (canEdit)
+        else
         {
-            // EditInputModel에 DB 값 복사
-            Input.Title = article.Title;
-            Input.Body = article.Body;
-            Input.IsPublished = article.IsPublished;
-            Input.CreatedAt = article.CreatedAt;
-            Input.AuthorId = article.AuthorId;
+            canEdit = false;
         }
-    }
 
-    private async Task HandleValidSubmit()
-    {
-        if (article == null || !canEdit) return;
-
-        // 폼에서 들어온 값을 DB 엔티티에 적용
-        article.Title = Input.Title;
-        article.Body = Input.Body;
-        article.IsPublished = Input.IsPublished;
-        article.CreatedAt = Input.CreatedAt;
-        article.AuthorId = Input.AuthorId;
-
-        await DbContext.SaveChangesAsync();
-        NavigationManager.NavigateTo("/articles");
-    }
-
-    private void Cancel()
-    {
-        NavigationManager.NavigateTo("/articles");
+        Logger.LogInformation("canEdit: {CanEdit}", canEdit);
     }
 }
