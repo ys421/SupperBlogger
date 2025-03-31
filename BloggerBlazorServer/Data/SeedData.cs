@@ -14,7 +14,6 @@ namespace BloggerBlazorServer.Data
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
             var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
             var dbContext = services.GetRequiredService<ApplicationDbContext>();
-            // 1) 기본 역할 생성: Admin, Contributor, User
             string[] roleNames = { "Admin", "Contributor", "User" };
             foreach (var role in roleNames)
             {
@@ -100,10 +99,10 @@ namespace BloggerBlazorServer.Data
                     {
                         new Article
                         {
-                            Title = "Sample Article for Testing",
-                            Body = "This is a sample article to test the blog functionality.",
+                            Title = "What is SAN??",
+                            Body = " 'SAN'is blog name which stands for our blog developer names. S for Seungyeoop, A for Alex, and N for Nischey. Welcome to our blog and thank you for viewing our article.",
                             StartDate = new DateTime(2025, 3, 15, 0, 0, 0, DateTimeKind.Utc),
-                            EndDate = new DateTime(2025, 3, 30, 0, 0, 0, DateTimeKind.Utc),
+                            EndDate = new DateTime(2025, 4, 20, 0, 0, 0, DateTimeKind.Utc),
                             IsPublished = true,
                             CreatedAt = new DateTime(2025, 3, 15, 0, 0, 0, DateTimeKind.Utc),
                             CreatedBy = admin.Id,
