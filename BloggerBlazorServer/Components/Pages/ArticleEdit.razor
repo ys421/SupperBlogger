@@ -28,27 +28,33 @@ else
         <!-- Article Id (숨김 필드) -->
         <input type="hidden" name="Id" value="@article.Id" />
 
-        <!-- 원 작성자: 수정 시 변경하지 않음 -->
+        <!-- 원 작성자 (CreatedBy) - 수정 시 변경하지 않음 -->
         <input type="hidden" name="CreatedBy" value="@article.CreatedBy" />
 
-        <!-- 최종 수정자: 현재 로그인 사용자의 실제 ID를 전송 -->
+        <!-- 최종 수정자 (LastModifiedBy) - 현재 로그인 사용자의 실제 ID를 전송 -->
         <input type="hidden" name="LastModifiedBy" value="@currentUserId" />
 
         <div class="mb-3">
             <label class="form-label">Title</label>
-            <input type="text" name="Title" class="form-control" value="@article.Title" required minlength="5" maxlength="200" />
+            <input type="text" name="Title" class="form-control"
+                   value="@article.Title" required minlength="5" maxlength="200" />
         </div>
+
         <div class="mb-3">
             <label class="form-label">Body</label>
-            <textarea name="Body" class="form-control" rows="5" required minlength="20">@article.Body</textarea>
+            <textarea name="Body" class="form-control" rows="5"
+                      required minlength="20">@article.Body</textarea>
         </div>
+
         <div class="form-check mb-3">
-            <!-- 체크박스 값 전송을 위해 숨김 필드와 체크박스를 함께 사용 -->
-            <input type="hidden" name="IsPublished" value="false" />
+            <!-- 체크박스와 숨김 필드 순서를 바꿔서, 체크박스가 체크된 경우 "true"가 먼저 전송되도록 함 -->
             <input type="checkbox" name="IsPublished" class="form-check-input" value="true" @(article.IsPublished ? "checked" : "") />
+            <input type="hidden" name="IsPublished" value="false" />
             <label class="form-check-label">Publish Article</label>
         </div>
+
         <p>Created at: @article.CreatedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</p>
+
         <button type="submit" class="btn btn-primary">Save Changes</button>
         <button type="button" class="btn btn-secondary" onclick="window.location.href='/articles'">Cancel</button>
     </form>
@@ -67,6 +73,7 @@ else
         // 로그인 사용자 확인 및 실제 사용자 ID 가져오기
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
+
         ApplicationUser? appUser = null;
         if (user.Identity?.IsAuthenticated == true)
         {
@@ -74,7 +81,7 @@ else
             if (appUser != null)
             {
                 currentUserId = appUser.Id; // 실제 DB에 존재하는 사용자 Id
-                Logger.LogInformation("CurrentUserId: {UserId}", currentUserId);
+                Logger.LogInformation("currentUserId = {UserId}", currentUserId);
             }
         }
 
@@ -89,7 +96,7 @@ else
         // 권한 체크: 관리자이면 수정 가능, 컨트리뷰터이면 원 작성자(즉, CreatedBy가 현재 사용자와 일치)만 수정 가능
         bool isAdmin = false;
         bool isContributor = false;
-        if (user.Identity?.IsAuthenticated == true && appUser != null)
+        if (appUser != null)
         {
             isAdmin = await UserManager.IsInRoleAsync(appUser, "Admin");
             isContributor = await UserManager.IsInRoleAsync(appUser, "Contributor");
